@@ -1,0 +1,9 @@
+2015-11-05 12:11:40 Error: [MissingControllerException] Controller class PlasticobolhaController could not be found.
+Exception Attributes: array (
+  'class' => 'PlasticobolhaController',
+  'plugin' => NULL,
+)
+Request URL: /PlasticoBolha/plasticobolha/
+Stack Trace:
+#0 C:\xampp\htdocs\PlasticoBolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
