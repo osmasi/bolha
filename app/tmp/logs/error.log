@@ -268,3 +268,12 @@ Request URL: /bolha/index.html
 Stack Trace:
 #0 D:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-11-06 13:07:53 Error: [MissingControllerException] Controller class Index.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/index.html
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
