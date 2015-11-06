@@ -37,7 +37,7 @@ App::uses('Debugger', 'Utility');
 						</div><!-- /gn-scroller -->
 					</nav>
 				</li>
-				<li><a href="index.html">NINESTARS</a></li>
+				<li><a href="index.html">COMÉRCIO LTDA</a></li>
 				<li><ul class="company-social">
                 <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -49,9 +49,9 @@ App::uses('Debugger', 'Utility');
 	<!-- Section: intro -->
     <section id="intro" class="intro">
 		<div class="slogan">
-			<h1>This is Ninestars</h1>
-			<p>make awesome stuff with Bootstrap framework</p>
-			<a href="#about" class="btn btn-skin scroll">Learn more</a>
+			<h1>Bem vindo ao Comércio Ltda!</h1>
+			<p>A maior distribuidora de plástico bolha da região da serra</p>
+			<a href="#about" class="btn btn-skin scroll">Leia Mais</a>
 		</div>
     </section>
 	<!-- /Section: intro -->
@@ -64,8 +64,8 @@ App::uses('Debugger', 'Utility');
 				<div class="col-lg-8 col-lg-offset-2">
 
 					<div class="section-heading">
-					<h2>About us</h2>
-					<p>Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has</p>
+					<h2>Nossos Produtos</h2>
+					<p>Somos especialistas em bobinas de plástico bolha e bobinas de papelão</p>
 					</div>
 
 				</div>
@@ -79,41 +79,41 @@ App::uses('Debugger', 'Utility');
 
                 <div class="team boxed-grey">
                     <div class="inner">
-						<h5>Anna Hanaceck</h5>
-                        <p class="subtitle">Pixel Crafter</p>
+												<h5>SIMP-BOBINA</h5>
+                        <p class="subtitle">BOBINA DE PLASTICO BOLHA 10mm SIMP-BOBINA 1,30m X 100m</p>
                         <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive" /></div>
                     </div>
                 </div>
 
             </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="col-xs-6 col-sm-3 col-md-3">
 
                 <div class="team boxed-grey">
                     <div class="inner">
-						<h5>Maura Daniels</h5>
-                        <p class="subtitle">Ruby on Rails</p>
+												<h5>SOFT</h5>
+                        <p class="subtitle">BOBINA DE PLASTICO BOLHA SOFT 1,30x100m</p>
                         <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive" /></div>
                     </div>
 
-				</div>
+									</div>
             </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="col-xs-6 col-sm-3 col-md-3">
 
                 <div class="team boxed-grey">
                     <div class="inner">
-						<h5>Jack Briane</h5>
-                        <p class="subtitle">jQuery Ninja</p>
+												<h5>SOFT MICRAS</h5>
+                        <p class="subtitle">BOBINA DE PLASTICO BOLHA SOFT 40 MICRAS 1,30m x 100m</p>
                         <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive" /></div>
                     </div>
                 </div>
 
             </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="col-xs-6 col-sm-3 col-md-3">
 
                 <div class="team boxed-grey">
                     <div class="inner">
-						<h5>Tom Petterson</h5>
-                        <p class="subtitle">Typographer</p>
+												<h5>KRAFT PURO</h5>
+                        <p class="subtitle">BOBINA DE PAPEL KRAFT PURO 60cm x 200m x 80g/m²</p>
                         <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive" /></div>
                     </div>
                 </div>
@@ -134,8 +134,8 @@ App::uses('Debugger', 'Utility');
 				<div class="col-lg-8 col-lg-offset-2">
 
 					<div class="section-heading">
-					<h2>Our Services</h2>
-					<p>Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has</p>
+					<h2>Nossos Serviços</h2>
+					<p>Distribuidor autorizado das principais marcas de plástico bolha e papelão do mescado.</p>
 					</div>
 
 				</div>
@@ -151,8 +151,8 @@ App::uses('Debugger', 'Utility');
 						<i class="fa fa-code fa-3x"></i>
 					</div>
 					<div class="service-desc">
-						<h5>Print</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+						<h5>Distribuidor</h5>
+						<p>Sempre os melhores produtos do mercado.</p>
 					</div>
                 </div>
 
@@ -164,8 +164,8 @@ App::uses('Debugger', 'Utility');
 						<i class="fa fa-suitcase fa-3x"></i>
 					</div>
 					<div class="service-desc">
-						<h5>Web Design</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+						<h5>Consultoria</h5>
+						<p>Consultores treinados para lhe oferecer o produto adequado à sua necessidade.</p>
 					</div>
                 </div>
 
@@ -177,8 +177,8 @@ App::uses('Debugger', 'Utility');
 						<i class="fa fa-cog fa-3x"></i>
 					</div>
 					<div class="service-desc">
-						<h5>Photography</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+						<h5>Garantia</h5>
+						<p>Garantia de fáfria em todas as linhas de produtos.</p>
 					</div>
                 </div>
 
@@ -190,8 +190,8 @@ App::uses('Debugger', 'Utility');
 						<i class="fa fa-rocket fa-3x"></i>
 					</div>
 					<div class="service-desc">
-						<h5>Cloud System</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+						<h5>Agilidade</h5>
+						<p>Agilidade na entrega a nível nacional.</p>
 					</div>
                 </div>
 
@@ -201,87 +201,16 @@ App::uses('Debugger', 'Utility');
 	</section>
 	<!-- /Section: services -->
 
-
-	<!-- Section: works -->
-    <section id="works" class="home-section text-center bg-gray">
-		<div class="heading-works marginbot-50">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-
-					<div class="section-heading">
-					<h2>Recent Works</h2>
-					<p>Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has</p>
-					</div>
-
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="container">
-
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12" >
-
-                    <div class="row gallery-item">
-                        <div class="col-md-3">
-							<a href="img/works/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/1.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/2.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/3.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/4.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/5.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/6.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/6.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/7.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/7.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="img/works/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
-								<img src="img/works/8.jpg" class="img-responsive" alt="img">
-							</a>
-						</div>
-					</div>
-
-                </div>
-            </div>
-		</div>
-	</section>
-	<!-- /Section: works -->
-
 	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center">
+  <section id="contact" class="home-section text-center">
 		<div class="heading-contact marginbot-50">
 			<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 
 					<div class="section-heading">
-					<h2>Get in touch</h2>
-					<p>Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has</p>
+					<h2>Entre em contato</h2>
+					<p>Estamos a sua disposição, sempre com o melhor preço do mercado.</p>
 					</div>
 
 				</div>
@@ -298,12 +227,12 @@ App::uses('Debugger', 'Utility');
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                Name</label>
+                                Nome</label>
                             <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="email">
-                                Email Address</label>
+                                Endereço de E-mail</label>
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
@@ -313,24 +242,24 @@ App::uses('Debugger', 'Utility');
                             <label for="subject">
                                 Subject</label>
                             <select id="subject" name="subject" class="form-control" required="required">
-                                <option value="na" selected="">Choose One:</option>
-                                <option value="service">General Customer Service</option>
-                                <option value="suggestions">Suggestions</option>
-                                <option value="product">Product Support</option>
+                                <option value="na" selected="">Escolha um:</option>
+                                <option value="service">Plástico Bolha</option>
+                                <option value="suggestions">Papelão</option>
+                                <option value="product">Outros</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                Message</label>
+                                Mensagem</label>
                             <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
                                 placeholder="Message"></textarea>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
-                            Send Message</button>
+                            Enviar Mensagem</button>
                     </div>
                 </div>
                 </form>
@@ -339,7 +268,7 @@ App::uses('Debugger', 'Utility');
 			<div class="widget-contact row">
 				 <div class="col-lg-6">
 				<address>
-				  <strong>Ninestars Ltd.</strong><br>
+				  <strong>Comércio Ltd.</strong><br>
 				  Big Villa 334 Awesome, Beautiful Suite 1200<br>
 				  San Francisco, CA 94107<br>
 				  <abbr title="Phone">P:</abbr> (123) 456-7890
@@ -349,8 +278,8 @@ App::uses('Debugger', 'Utility');
 				<div class="col-lg-6">
 				<address>
 				  <strong>Email</strong><br>
-				  <a href="mailto:#">email.name@example.com</a><br />
-				   <a href="mailto:#">name.name@example.com</a>
+				  <a href="mailto:#">email.name@comercio.com</a><br />
+				   <a href="mailto:#">name.name@comercio.com</a>
 				</address>
 
 				</div>
