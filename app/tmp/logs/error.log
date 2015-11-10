@@ -277,3 +277,626 @@ Request URL: /bolha/index.html
 Stack Trace:
 #0 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-11-10 08:11:30 Error: [MissingControllerException] Controller class ContactController could not be found.
+Exception Attributes: array (
+  'class' => 'ContactController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/contact
+Stack Trace:
+#0 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-10 08:14:40 Error: [MissingControllerException] Controller class ContactController could not be found.
+Exception Attributes: array (
+  'class' => 'ContactController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/contact
+Stack Trace:
+#0 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-10 08:14:45 Error: [MissingActionException] Action ContactsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ContactsController',
+  'action' => 'index',
+)
+Request URL: /bolha/contacts
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContactsController), Object(CakeRequest))
+#2 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-10 08:14:55 Error: [MissingControllerException] Controller class ContactController could not be found.
+Exception Attributes: array (
+  'class' => 'ContactController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/contact
+Stack Trace:
+#0 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-10 08:16:06 Error: [MissingViewException] View file "Pages/css/bootstrap.min.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/bootstrap.min.css.ctp',
+)
+Request URL: /bolha/pages/css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/bootstrap.m...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/bootstrap.m...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/bootstrap.m...')
+#3 [internal function]: PagesController->display('css', 'bootstrap.min.c...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:06 Error: [MissingViewException] View file "Pages/font-awesome/css/font-awesome.min.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/font-awesome/css/font-awesome.min.css.ctp',
+)
+Request URL: /bolha/pages/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('font-awesome/cs...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('font-awesome/cs...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('font-awesome/cs...')
+#3 [internal function]: PagesController->display('font-awesome', 'css', 'font-awesome.mi...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:06 Error: [MissingViewException] View file "Pages/css/nivo-lightbox.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/nivo-lightbox.css.ctp',
+)
+Request URL: /bolha/pages/css/nivo-lightbox.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/nivo-lightb...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/nivo-lightb...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/nivo-lightb...')
+#3 [internal function]: PagesController->display('css', 'nivo-lightbox.c...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:06 Error: [MissingViewException] View file "Pages/css/nivo-lightbox-theme/default/default.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/nivo-lightbox-theme/default/default.css.ctp',
+)
+Request URL: /bolha/pages/css/nivo-lightbox-theme/default/default.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/nivo-lightb...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/nivo-lightb...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/nivo-lightb...')
+#3 [internal function]: PagesController->display('css', 'nivo-lightbox-t...', 'default', 'default.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:06 Error: [MissingViewException] View file "Pages/css/style.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/style.css.ctp',
+)
+Request URL: /bolha/pages/css/style.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/style.css')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/style.css', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/style.css')
+#3 [internal function]: PagesController->display('css', 'style.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:06 Error: [MissingViewException] View file "Pages/css/animate.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/animate.css.ctp',
+)
+Request URL: /bolha/pages/css/animate.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/animate.css')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/animate.css', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/animate.css')
+#3 [internal function]: PagesController->display('css', 'animate.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/js/bootstrap.min.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/bootstrap.min.js.ctp',
+)
+Request URL: /bolha/pages/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/bootstrap.mi...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/bootstrap.mi...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/bootstrap.mi...')
+#3 [internal function]: PagesController->display('js', 'bootstrap.min.j...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/js/jquery.min.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/jquery.min.js.ctp',
+)
+Request URL: /bolha/pages/js/jquery.min.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/jquery.min.j...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/jquery.min.j...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/jquery.min.j...')
+#3 [internal function]: PagesController->display('js', 'jquery.min.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/js/jquery.easing.min.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/jquery.easing.min.js.ctp',
+)
+Request URL: /bolha/pages/js/jquery.easing.min.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/jquery.easin...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/jquery.easin...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/jquery.easin...')
+#3 [internal function]: PagesController->display('js', 'jquery.easing.m...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/js/classie.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/classie.js.ctp',
+)
+Request URL: /bolha/pages/js/classie.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/classie.js')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/classie.js', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/classie.js')
+#3 [internal function]: PagesController->display('js', 'classie.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/color/default.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/color/default.css.ctp',
+)
+Request URL: /bolha/pages/color/default.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('color/default.c...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('color/default.c...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('color/default.c...')
+#3 [internal function]: PagesController->display('color', 'default.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/js/gnmenu.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/gnmenu.js.ctp',
+)
+Request URL: /bolha/pages/js/gnmenu.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/gnmenu.js')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/gnmenu.js', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/gnmenu.js')
+#3 [internal function]: PagesController->display('js', 'gnmenu.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/js/jquery.scrollTo.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/jquery.scrollTo.js.ctp',
+)
+Request URL: /bolha/pages/js/jquery.scrollTo.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/jquery.scrol...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/jquery.scrol...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/jquery.scrol...')
+#3 [internal function]: PagesController->display('js', 'jquery.scrollTo...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/js/nivo-lightbox.min.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/nivo-lightbox.min.js.ctp',
+)
+Request URL: /bolha/pages/js/nivo-lightbox.min.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/nivo-lightbo...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/nivo-lightbo...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/nivo-lightbo...')
+#3 [internal function]: PagesController->display('js', 'nivo-lightbox.m...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/js/stellar.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/stellar.js.ctp',
+)
+Request URL: /bolha/pages/js/stellar.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/stellar.js')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/stellar.js', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/stellar.js')
+#3 [internal function]: PagesController->display('js', 'stellar.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:16:07 Error: [MissingViewException] View file "Pages/js/custom.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/custom.js.ctp',
+)
+Request URL: /bolha/pages/js/custom.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/custom.js')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/custom.js', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/custom.js')
+#3 [internal function]: PagesController->display('js', 'custom.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/css/bootstrap.min.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/bootstrap.min.css.ctp',
+)
+Request URL: /bolha/pages/css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/bootstrap.m...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/bootstrap.m...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/bootstrap.m...')
+#3 [internal function]: PagesController->display('css', 'bootstrap.min.c...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/font-awesome/css/font-awesome.min.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/font-awesome/css/font-awesome.min.css.ctp',
+)
+Request URL: /bolha/pages/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('font-awesome/cs...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('font-awesome/cs...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('font-awesome/cs...')
+#3 [internal function]: PagesController->display('font-awesome', 'css', 'font-awesome.mi...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/css/nivo-lightbox.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/nivo-lightbox.css.ctp',
+)
+Request URL: /bolha/pages/css/nivo-lightbox.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/nivo-lightb...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/nivo-lightb...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/nivo-lightb...')
+#3 [internal function]: PagesController->display('css', 'nivo-lightbox.c...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/color/default.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/color/default.css.ctp',
+)
+Request URL: /bolha/pages/color/default.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('color/default.c...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('color/default.c...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('color/default.c...')
+#3 [internal function]: PagesController->display('color', 'default.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/js/bootstrap.min.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/bootstrap.min.js.ctp',
+)
+Request URL: /bolha/pages/js/bootstrap.min.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/bootstrap.mi...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/bootstrap.mi...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/bootstrap.mi...')
+#3 [internal function]: PagesController->display('js', 'bootstrap.min.j...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/css/animate.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/animate.css.ctp',
+)
+Request URL: /bolha/pages/css/animate.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/animate.css')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/animate.css', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/animate.css')
+#3 [internal function]: PagesController->display('css', 'animate.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/css/style.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/style.css.ctp',
+)
+Request URL: /bolha/pages/css/style.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/style.css')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/style.css', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/style.css')
+#3 [internal function]: PagesController->display('css', 'style.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/js/classie.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/classie.js.ctp',
+)
+Request URL: /bolha/pages/js/classie.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/classie.js')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/classie.js', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/classie.js')
+#3 [internal function]: PagesController->display('js', 'classie.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/js/jquery.scrollTo.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/jquery.scrollTo.js.ctp',
+)
+Request URL: /bolha/pages/js/jquery.scrollTo.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/jquery.scrol...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/jquery.scrol...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/jquery.scrol...')
+#3 [internal function]: PagesController->display('js', 'jquery.scrollTo...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/js/jquery.min.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/jquery.min.js.ctp',
+)
+Request URL: /bolha/pages/js/jquery.min.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/jquery.min.j...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/jquery.min.j...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/jquery.min.j...')
+#3 [internal function]: PagesController->display('js', 'jquery.min.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/css/nivo-lightbox-theme/default/default.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/nivo-lightbox-theme/default/default.css.ctp',
+)
+Request URL: /bolha/pages/css/nivo-lightbox-theme/default/default.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/nivo-lightb...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/nivo-lightb...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/nivo-lightb...')
+#3 [internal function]: PagesController->display('css', 'nivo-lightbox-t...', 'default', 'default.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/js/jquery.easing.min.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/jquery.easing.min.js.ctp',
+)
+Request URL: /bolha/pages/js/jquery.easing.min.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/jquery.easin...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/jquery.easin...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/jquery.easin...')
+#3 [internal function]: PagesController->display('js', 'jquery.easing.m...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/js/gnmenu.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/gnmenu.js.ctp',
+)
+Request URL: /bolha/pages/js/gnmenu.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/gnmenu.js')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/gnmenu.js', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/gnmenu.js')
+#3 [internal function]: PagesController->display('js', 'gnmenu.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/js/stellar.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/stellar.js.ctp',
+)
+Request URL: /bolha/pages/js/stellar.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/stellar.js')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/stellar.js', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/stellar.js')
+#3 [internal function]: PagesController->display('js', 'stellar.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/js/nivo-lightbox.min.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/nivo-lightbox.min.js.ctp',
+)
+Request URL: /bolha/pages/js/nivo-lightbox.min.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/nivo-lightbo...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/nivo-lightbo...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/nivo-lightbo...')
+#3 [internal function]: PagesController->display('js', 'nivo-lightbox.m...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:17:57 Error: [MissingViewException] View file "Pages/js/custom.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/js/custom.js.ctp',
+)
+Request URL: /bolha/pages/js/custom.js
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('js/custom.js')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('js/custom.js', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('js/custom.js')
+#3 [internal function]: PagesController->display('js', 'custom.js')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:18:28 Error: [MissingViewException] View file "Pages/css/bootstrap.min.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/bootstrap.min.css.ctp',
+)
+Request URL: /bolha/pages/css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/bootstrap.m...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/bootstrap.m...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/bootstrap.m...')
+#3 [internal function]: PagesController->display('css', 'bootstrap.min.c...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:18:28 Error: [MissingViewException] View file "Pages/css/nivo-lightbox.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/nivo-lightbox.css.ctp',
+)
+Request URL: /bolha/pages/css/nivo-lightbox.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/nivo-lightb...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/nivo-lightb...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/nivo-lightb...')
+#3 [internal function]: PagesController->display('css', 'nivo-lightbox.c...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:18:28 Error: [MissingViewException] View file "Pages/font-awesome/css/font-awesome.min.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/font-awesome/css/font-awesome.min.css.ctp',
+)
+Request URL: /bolha/pages/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('font-awesome/cs...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('font-awesome/cs...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('font-awesome/cs...')
+#3 [internal function]: PagesController->display('font-awesome', 'css', 'font-awesome.mi...')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:18:28 Error: [MissingViewException] View file "Pages/css/nivo-lightbox-theme/default/default.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/nivo-lightbox-theme/default/default.css.ctp',
+)
+Request URL: /bolha/pages/css/nivo-lightbox-theme/default/default.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/nivo-lightb...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/nivo-lightb...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/nivo-lightb...')
+#3 [internal function]: PagesController->display('css', 'nivo-lightbox-t...', 'default', 'default.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:18:28 Error: [MissingViewException] View file "Pages/css/animate.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/animate.css.ctp',
+)
+Request URL: /bolha/pages/css/animate.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/animate.css')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/animate.css', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/animate.css')
+#3 [internal function]: PagesController->display('css', 'animate.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:18:28 Error: [MissingViewException] View file "Pages/css/style.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/css/style.css.ctp',
+)
+Request URL: /bolha/pages/css/style.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('css/style.css')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('css/style.css', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('css/style.css')
+#3 [internal function]: PagesController->display('css', 'style.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-10 08:18:28 Error: [MissingViewException] View file "Pages/color/default.css.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/color/default.css.ctp',
+)
+Request URL: /bolha/pages/color/default.css
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName('color/default.c...')
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render('color/default.c...', NULL)
+#2 /var/www/html/bolha/app/Controller/PagesController.php(68): Controller->render('color/default.c...')
+#3 [internal function]: PagesController->display('color', 'default.css')
+#4 /var/www/html/bolha/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
