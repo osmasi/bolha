@@ -1,9 +1,9 @@
 
 <?php
 
-    class LojaController extends AppController {
+    class AdminController extends AppController {
 
-        public $name = 'Loja';
+        public $name = 'Admin';
         public $uses = array('categoria', 'cliente', 'endereco', 'pagamento', 'pedido', 'produto');
 
         public function isAuthorized($user = null) {

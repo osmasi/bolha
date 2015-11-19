@@ -79,16 +79,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         </ul>	</li>
 		</ul>
 	</div>
-	<div id="container">
-		<div id="header">
+	<div id="container" class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+            <div id="content" class="content">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<?php echo $this->Session->flash(); ?>
+					<?php echo $this->fetch('content'); ?>
+				</div>
+            </div>
+        </div>
+    </div>
 
-		</div>
-		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
-		</div>
 		<div id="footer">
 			<footer>
 				<div class="container">
