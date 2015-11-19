@@ -34,7 +34,7 @@ App::uses('Debugger', 'Utility');
 					<div class="section-heading">
 					<h2>Nossos Produtos</h2>
 					<p>Somos especialistas em bobinas de plástico bolha e bobinas de papelão</p>
-					<a href="/bolha/pages/about" class="btn btn-skin scroll">Loja</a>
+					<a href="/bolha/loja/index" class="btn btn-skin scroll">Loja</a>
 					</div>
 
 				</div>
