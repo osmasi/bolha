@@ -102,7 +102,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</footer>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
 
 	<!-- Core JavaScript Files -->
 	<script src="/bolha/js/jquery.min.js"></script>

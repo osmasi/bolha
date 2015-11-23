@@ -969,3 +969,227 @@ Stack Trace:
 #3 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
 #4 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-11-23 17:14:10 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 34]
+2015-11-23 17:14:10 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:20:33 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 34]
+2015-11-23 17:20:33 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:21:01 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 34]
+2015-11-23 17:21:01 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:22:21 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 34]
+2015-11-23 17:22:21 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:22:22 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 34]
+2015-11-23 17:22:22 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:23:09 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 34]
+2015-11-23 17:23:09 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:23:11 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 34]
+2015-11-23 17:23:11 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:24:19 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 34]
+2015-11-23 17:24:19 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:24:41 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 34]
+2015-11-23 17:24:41 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 34, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:27:26 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 15]
+2015-11-23 17:27:26 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:27:28 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 15]
+2015-11-23 17:27:28 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:32:50 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 15]
+2015-11-23 17:32:50 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:36:47 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 15]
+2015-11-23 17:36:47 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:36:55 Error: [MissingActionException] Action AdminController::index_cliente() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'index_cliente',
+)
+Request URL: /bolha/admin/index_cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-23 17:37:06 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 15]
+2015-11-23 17:37:06 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/index_cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:37:08 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 15]
+2015-11-23 17:37:08 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/index_cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:37:26 Error: Fatal Error (1): Call to undefined function debig() in [/var/www/html/bolha/app/View/Admin/index_cliente.ctp, line 6]
+2015-11-23 17:37:26 Error: [FatalErrorException] Call to undefined function debig()
+Request URL: /bolha/admin/index_cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/b...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/b...', 6, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/b...', 6, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:37:28 Error: Fatal Error (1): Call to undefined function debig() in [/var/www/html/bolha/app/View/Admin/index_cliente.ctp, line 6]
+2015-11-23 17:37:28 Error: [FatalErrorException] Call to undefined function debig()
+Request URL: /bolha/admin/index_cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/b...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/b...', 6, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/b...', 6, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:43:22 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 15]
+2015-11-23 17:43:22 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /bolha/admin/index_cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 15, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:49:17 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/html/bolha/app/Controller/AdminController.php, line 19]
+2015-11-23 17:49:17 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /bolha/admin/add_cliente
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 19, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 19, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 17:52:54 Error: [MissingActionException] Action AdminController::edit_cliente() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'edit_cliente',
+)
+Request URL: /bolha/Admin/edit_cliente/1
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-23 17:53:43 Error: [MissingViewException] View file "Admin/edit_cliente.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Admin/edit_cliente.ctp',
+)
+Request URL: /bolha/Admin/edit_cliente/1
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/bolha/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#4 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
