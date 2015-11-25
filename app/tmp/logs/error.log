@@ -1193,3 +1193,97 @@ Stack Trace:
 #3 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
 #4 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-11-25 08:35:33 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/user
+Stack Trace:
+#0 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-25 08:35:37 Error: [MissingTableException] Table grupos for model Grupo was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'grupos',
+  'class' => 'Grupo',
+  'ds' => 'default',
+)
+Request URL: /bolha/users
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Model/Model.php(3644): Model->setSource('grupos')
+#1 /var/www/html/bolha/lib/Cake/Model/Model.php(3022): Model->getDataSource()
+#2 /var/www/html/bolha/lib/Cake/Model/Model.php(2994): Model->_readDataSource('list', Array)
+#3 /var/www/html/bolha/app/Controller/UsersController.php(37): Model->find('list', Array)
+#4 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#5 /var/www/html/bolha/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/html/bolha/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-25 08:37:45 Error: [MissingTableException] Table grupos for model Grupo was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'grupos',
+  'class' => 'Grupo',
+  'ds' => 'default',
+)
+Request URL: /bolha/users
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Model/Model.php(3644): Model->setSource('grupos')
+#1 /var/www/html/bolha/lib/Cake/Model/Model.php(3022): Model->getDataSource()
+#2 /var/www/html/bolha/lib/Cake/Model/Model.php(2994): Model->_readDataSource('list', Array)
+#3 /var/www/html/bolha/app/Controller/UsersController.php(37): Model->find('list', Array)
+#4 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#5 /var/www/html/bolha/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/html/bolha/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-25 09:12:12 Error: Fatal Error (1): Call to undefined method UsersController::geraSenha() in [/var/www/html/bolha/app/Controller/UsersController.php, line 54]
+2015-11-25 09:12:12 Error: [FatalErrorException] Call to undefined method UsersController::geraSenha()
+Request URL: /bolha/users/add
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/b...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/b...', 54, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/b...', 54, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-25 09:14:02 Error: Fatal Error (1): Call to undefined method UsersController::geraSenha() in [/var/www/html/bolha/app/Controller/UsersController.php, line 54]
+2015-11-25 09:14:02 Error: [FatalErrorException] Call to undefined method UsersController::geraSenha()
+Request URL: /bolha/users/add
+Stack Trace:
+#0 /var/www/html/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/b...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/b...', 54, Array)
+#2 /var/www/html/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/b...', 54, Array)
+#3 /var/www/html/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-25 09:23:29 Error: [MissingControllerException] Controller class LogautController could not be found.
+Exception Attributes: array (
+  'class' => 'LogautController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/logaut
+Stack Trace:
+#0 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-25 09:23:54 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/logout
+Stack Trace:
+#0 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-25 09:24:02 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/user/logout
+Stack Trace:
+#0 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

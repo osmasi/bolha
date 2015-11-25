@@ -31,4 +31,39 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    public $components = array(
+		'Session',
+		'Auth' => array(
+			'loginRedirect' => array(
+				'controller' => 'dashboards',
+				'action' => 'index',
+			),
+			'logoutRedirect' => array(
+				'controller' => 'users',
+                'action' => 'login',
+			),
+			'authenticate' => array(
+				'Form' => array(
+					'passwordHasher' => 'Blowfish'
+				),
+			),
+            'authorize' => 'Controller',
+		),
+	);
+
+	public function beforeFilter() {
+        parent::beforeFilter();
+		//$this->Auth->allow('add'); //Libera acesso não autenticado
+        $this->Auth->allow('login', 'logout', 'home');
+        //$this->set('admin', $this->Auth->user('role')=='admin');
+        $this->set('role', $this->Auth->user('role'));
+	}
+
+    public function isAuthorized($user = null) {
+        if($user['role'] == 'admin'){
+		    return true;
+        }else{
+            return false;
+        }
+    }
 }
