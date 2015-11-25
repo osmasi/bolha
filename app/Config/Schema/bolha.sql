@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 19-Nov-2015 às 07:47
+-- Data de Criação: 25-Nov-2015 às 09:53
 -- Versão do servidor: 5.6.27-0ubuntu0.14.04.1
 -- versão do PHP: 5.5.9-1ubuntu4.14
 
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `contato` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -142,6 +142,28 @@ CREATE TABLE IF NOT EXISTS `produtos` (
   UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `fk_Produto_Categoria_idx` (`categoria`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `role` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `username`, `role`, `password`) VALUES
+(1, 'admin', 'admin@admin.com', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC');
 
 --
 -- Constraints for dumped tables
