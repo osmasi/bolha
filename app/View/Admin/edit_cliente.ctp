@@ -30,7 +30,7 @@
 
                 <div class="form-group">
                     <div class="form-group col-md-2">
-                        <?php echo $this->Form->end(array('label' => 'Cadastrar', 'class' => "btn btn-block")); ?>
+                        <?php echo $this->Form->end(array('label' => 'Alterar', 'class' => "btn btn-block")); ?>
                     </div>
                     <div class="form-group col-md-2">
                         <?php echo $this->Html->link('Voltar',

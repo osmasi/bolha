@@ -45,6 +45,11 @@
                 <?php echo $this->Html->link('Cadastrar Cliente',
                     array('controller' => 'admin', 'action' => 'add_cliente'),
                     array('class' => "btn" )); ?>
+
+                <?php echo $this->Html->link('Voltar',
+                    array('controller' => 'admin', 'action' => 'index'),
+                    array('class' => "btn" )); ?>
+
             </div>
         </div>
     </div>

@@ -36,7 +36,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
 	<!-- Bootstrap Core CSS -->
 	<link href="/bolha/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
 	<!-- Fonts -->
 	<link href="/bolha/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="/bolha/css/nivo-lightbox.css" rel="stylesheet" />
@@ -45,6 +44,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<!-- Squad theme CSS -->
 	<link href="/bolha/css/style.css" rel="stylesheet">
 	<link href="/bolha/color/default.css" rel="stylesheet">
+	<!-- DataTables -->
+    <link href="/bolha/css/datatables/tools/css/dataTables.tableTools.css" rel="stylesheet">
+    <link href="/bolha/css/datatables/css/dataTables.bootstrap.css" rel="stylesheet">
 
 </head>
 <body>
@@ -114,6 +116,35 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<script src="/bolha/js/stellar.js"></script>
 	<!-- Custom Theme JavaScript -->
 	<script src="/bolha/js/custom.js"></script>
+	<!-- Datatables -->
+        <script src="/bolha/js/datatables/js/jquery.dataTables.js"></script>
+        <script src="/bolha/js/datatables/js/dataTables.bootstrap.js"></script>
+
+        <script>
+           $(document).ready(function () {
+               otable1 = $('#dataTables').dataTable( {
+                   "language": {
+                       "emptyTable":     "Não há dados disponíveis na tabela",
+                       "info":           "Mostrando _START_ para _END_ de _TOTAL_ ",
+                       "infoEmpty":      "Mostrando 0-0 de 0 entradas",
+                       "infoFiltered":   "(filtrada de _MAX_ entradas totais)",
+                       "infoPostFix":    "",
+                       "thousands":      ",",
+                       "lengthMenu":     "Mostrar _MENU_ entradas",
+                       "loadingRecords": "Carregando...",
+                       "processing":     "Processando...",
+                       "search":         "Pesquisar: ",
+                       "zeroRecords":    "Nenhum registro correspondente encontrado",
+                       "paginate": {
+                           "first":      "Primeiro",
+                           "last":       "Último",
+                           "next":       "Póximo",
+                           "previous":   "Anterior"
+                       },
+                   },
+               });
+           });
+    	</script>
 
 </body>
 </html>
