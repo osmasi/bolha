@@ -37,7 +37,7 @@
                 <div class="icon"><i class="fa fa-check-square-o fa-5x"></i></div>
                 <h3><?php echo $this->Html->link("Pedidos",
                             array('controller' => 'admin', 'action' => 'index_cliente')); ?></h3>
-                <p>Pedidos à faturrar.</p>
+                <p>Pedidos à faturar.</p>
             </div>
         </div>
         <div class="animated flipInY col-lg-2 col-md-2 col-sm-6 col-xs-12">

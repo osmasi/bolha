@@ -32,38 +32,36 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
     public $components = array(
-		'Session',
-		'Auth' => array(
-			'loginRedirect' => array(
-				'controller' => 'dashboards',
-				'action' => 'index',
-			),
-			'logoutRedirect' => array(
-				'controller' => 'users',
-                'action' => 'login',
-			),
-			'authenticate' => array(
-				'Form' => array(
-					'passwordHasher' => 'Blowfish'
-				),
-			),
+  		'Session',
+  		'Auth' => array(
+  			'loginRedirect' => array(
+  				'controller' => 'pages',
+  				'action' => 'home',
+  			),
+  			'logoutRedirect' => array(
+  				'controller' => 'users',
+          'action' => 'login',
+  			),
+  			'authenticate' => array(
+  				'Form' => array(
+  					'passwordHasher' => 'Blowfish'
+  				),
+  			),
             'authorize' => 'Controller',
-		),
-	);
+  		),
+  	);
 
-	public function beforeFilter() {
-        parent::beforeFilter();
-		//$this->Auth->allow('add'); //Libera acesso não autenticado
-        $this->Auth->allow('login', 'logout', 'home');
-        //$this->set('admin', $this->Auth->user('role')=='admin');
-        $this->set('role', $this->Auth->user('role'));
-	}
+  	public function beforeFilter() {
+          parent::beforeFilter();
+          $this->Auth->allow('login', 'logout', 'display');
+          $this->set('role', $this->Auth->user('role'));
+  	}
 
     public function isAuthorized($user = null) {
         if($user['role'] == 'admin'){
 		    return true;
         }else{
-            return false;
+            return true;
         }
     }
 }

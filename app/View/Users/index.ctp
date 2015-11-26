@@ -40,9 +40,16 @@
                         </tbody>
                     </table>
                 </div>
-                <?php echo $this->Html->link('Cadastrar Usuário',
-                    array('controller' => 'users', 'action' => 'add'),
-                    array('class' => "btn btn-dark" )); ?>
+                <div class="form-group col-md-2">
+                  <?php echo $this->Html->link('Cadastrar Usuário',
+                      array('controller' => 'users', 'action' => 'add'),
+                      array('class' => "btn btn-dark" )); ?>
+                </div>
+                <div class="form-group col-md-2">
+                    <?php echo $this->Html->link('Voltar',
+                        array('controller' => 'admin', 'action' => "index"),
+                        array('class' => "btn btn-block" )); ?>
+                </div>
             </div>
         </div>
     </div>
