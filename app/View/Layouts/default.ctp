@@ -120,6 +120,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<script src="/bolha/js/stellar.js"></script>
 	<!-- Custom Theme JavaScript -->
 	<script src="/bolha/js/custom.js"></script>
+	<!-- Angular JS -->
+	<script src="/bolha/js/angular.min.js"></script>
 	<!-- Datatables -->
         <script src="/bolha/js/datatables/js/jquery.dataTables.js"></script>
         <script src="/bolha/js/datatables/js/dataTables.bootstrap.js"></script>

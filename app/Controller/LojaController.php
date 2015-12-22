@@ -4,7 +4,7 @@
     class LojaController extends AppController {
 
         public $name = 'Loja';
-        public $uses = array('categoria', 'cliente', 'endereco', 'pagamento', 'pedido', 'produto');
+        public $uses = array('Categoria', 'Cliente', 'Endereco', 'Pagamento', 'Pedido', 'Produto');
 
         public function isAuthorized($user = null) {
     		if (parent::isAuthorized($user))
@@ -27,7 +27,7 @@
 
         public function index() {
             #$user_login = $this->Auth->user('id');
-
+            $this->set('todos_produtos', $this->Produto->find('all'));
 	    }
 
     }
