@@ -2493,3 +2493,53 @@ Stack Trace:
 #1 D:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
 #2 D:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-12-24 14:58:31 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Base \'bolha\' inconnue',
+  'enabled' => true,
+)
+Request URL: /bolha/users/login
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\bolha\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\bolha\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\bolha\lib\Cake\Model\Model.php(3644): Model->setSource('usuarios')
+#5 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#6 C:\wamp\www\bolha\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp\www\bolha\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\bolha\app\View\Users\login.ctp(6): FormHelper->create('User')
+#9 C:\wamp\www\bolha\lib\Cake\View\View.php(971): include('C:\\wamp\\www\\bol...')
+#10 C:\wamp\www\bolha\lib\Cake\View\View.php(933): View->_evaluate('C:\\wamp\\www\\bol...', Array)
+#11 C:\wamp\www\bolha\lib\Cake\View\View.php(473): View->_render('C:\\wamp\\www\\bol...')
+#12 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#13 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-12-24 14:59:17 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Base \'bolha\' inconnue',
+  'enabled' => true,
+)
+Request URL: /bolha/users/login
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\wamp\www\bolha\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\wamp\www\bolha\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\wamp\www\bolha\lib\Cake\Model\Model.php(3644): Model->setSource('usuarios')
+#5 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#6 C:\wamp\www\bolha\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\wamp\www\bolha\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\bolha\app\View\Users\login.ctp(6): FormHelper->create('User')
+#9 C:\wamp\www\bolha\lib\Cake\View\View.php(971): include('C:\\wamp\\www\\bol...')
+#10 C:\wamp\www\bolha\lib\Cake\View\View.php(933): View->_evaluate('C:\\wamp\\www\\bol...', Array)
+#11 C:\wamp\www\bolha\lib\Cake\View\View.php(473): View->_render('C:\\wamp\\www\\bol...')
+#12 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#13 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}

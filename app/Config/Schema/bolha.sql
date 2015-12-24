@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 
 --
 -- Base de Dados: `bolha`
---
+-- Primeiro criar Base de Dados no PHP My admin e depois executar o SQL
 
 -- --------------------------------------------------------
 
