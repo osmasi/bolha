@@ -28,7 +28,7 @@
             <div class="tile-stats">
                 <div class="icon"><i class="fa fa-inbox fa-5x"></i></div>
                 <h3><?php echo $this->Html->link("Produtos",
-                            array('controller' => 'admin', 'action' => 'index_cliente')); ?></h3>
+                            array('controller' => 'admin', 'action' => 'index_produto')); ?></h3>
                 <p>Cadastro de produtos.</p>
             </div>
         </div>

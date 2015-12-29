@@ -17,6 +17,7 @@
                                 <th>Celular</th>
                                 <th>Razão Social</th>
                                 <th>Contato</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -31,6 +32,9 @@
                                     <td> <?php echo $cliente['Cliente']['celular']; ?></td>
                                     <td> <?php echo $cliente['Cliente']['razaoSocial']; ?></td>
                                     <td> <?php echo $cliente['Cliente']['contato']; ?></td>
+                                    <td><?php echo $this->Form->postLink('Excluir',
+                            					array('action' => 'delete_cliente', $cliente['Cliente']['id']),
+                            					array('confirm' => 'Tem Certeza?'))?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

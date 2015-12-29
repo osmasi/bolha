@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.10deb1
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Máquina: localhost
--- Data de Criação: 25-Nov-2015 às 09:53
--- Versão do servidor: 5.6.27-0ubuntu0.14.04.1
--- versão do PHP: 5.5.9-1ubuntu4.14
+-- Host: 127.0.0.1
+-- Generation Time: 29-Dez-2015 às 01:17
+-- Versão do servidor: 5.6.17
+-- PHP Version: 5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,8 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de Dados: `bolha`
--- Primeiro criar Base de Dados no PHP My admin e depois executar o SQL
+-- Database: `bolha`
+-- Primeiro criar base de dados com o nome Bolha e depois executar o SQL no phpmyadmin
 
 -- --------------------------------------------------------
 
@@ -32,7 +32,14 @@ CREATE TABLE IF NOT EXISTS `categorias` (
   `descricao` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `categorias`
+--
+
+INSERT INTO `categorias` (`id`, `nome`, `descricao`) VALUES
+(1, 'bobina', 'bobina de plastico');
 
 -- --------------------------------------------------------
 
@@ -51,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `contato` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -141,7 +148,7 @@ CREATE TABLE IF NOT EXISTS `produtos` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `fk_Produto_Categoria_idx` (`categoria`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -156,14 +163,15 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `role` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `username`, `role`, `password`) VALUES
-(1, 'admin', 'admin@admin.com', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC');
+(1, 'admin', 'admin@admin.com', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
+(2, 'Cristian Herpich', 'cristian', 'admin', '$2a$10$ZK.X96fF/aAAzYK.WpURteqJoBaLeixAUlkgCZ/IUjPCaU4tC8MLa');
 
 --
 -- Constraints for dumped tables
