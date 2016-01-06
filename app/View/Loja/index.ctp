@@ -1,31 +1,27 @@
-
-<script type="text/javascript">
-function banana2 () {document.getElementById("banana").innerHTML="tete";}
-function banana () {alert("bunda");}
-</script>
-<p id='banana'> BABANANANANANANANANANAJGSSVDJTSG</p> <button onclick="banana2()"> </button>
-<div class="x_title">
+<div ng-app="myApp" ng-controller="myCtrl">
+<div class="x_title" >
     <h2>LOJA</h2>
 </div>
 
-<div class="produtos">
-    <div class="row top_tiles">
-      <div class="row top_tiles">
-           <?php	foreach ($todos_produtos as $item) { ?>
-              <div class="animated flipInY col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <div class="tile-stats">
-                      <h3><?php echo $item['Produto']['nome']; ?></h3>
-                      <p>R$<?php echo $item['Produto']['valor']; ?></p>
-                      <img src="pegarImg.php?id= <?php echo $item['Produto']['id'] ?>"/>
-                  </div>
+        <div class="produtos">
+            <div class="row top_tiles">
+              <div class="row top_tiles">
+                   <?php	foreach ($todos_produtos as $item) { ?>
+                      <div class="animated flipInY col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                          <div class="tile-stats">
+                              <h3><a href="#" data-toggle="modal" data-target="#detalhes" ng-init="prod='<?php echo $item['Produto']['nome']; ?>'; quantidade=<?php echo $item['Produto']['quantidade']; ?>; valor=<?php echo $item['Produto']['valor']; ?>">
+                                <?php echo $item['Produto']['nome']; ?></a></h3>
+                              <p>R$<?php echo $item['Produto']['valor']; ?></p>
+                              <img src="pegarImg.php?id= <?php echo $item['Produto']['id'] ?>"/>
+                          </div>
+                      </div>
+                    <?php	}	?>
               </div>
-            <?php	}	?>
-      </div>
-    </div>
-</div>
+            </div>
+        </div>
 
        <div class="carrinho">
-           <button type="button" class="button alert tiny right" data-toggle="modal" data-target="#myModal"><h3 style="color:white"><i class="gn-icon gn-icon-download"></i></h3></button>
+           <button type="button" class="button alert tiny right" data-toggle="modal" data-target="#myModal"><h3><i class="gn-icon gn-icon-download"></i></h3></button>
 
            <!-- Modal -->
            <div class="modal fade" id="myModal" role="dialog">
@@ -38,7 +34,7 @@ function banana () {alert("bunda");}
                        </div>
                        <!-- Modal Corpo-->
                        <div class="modal-body">
-                           <div ng-app="myApp" ng-controller="myCtrl" class="content">
+                           <div class="content">
                                <ul class="pricing-table">
                                    <li class="title large"><h3 style="color:white">{{count1 + count2 + count3 + count4}}       Produtos      <i class="fi-shopping-cart"></i></h3></li>
 
@@ -93,3 +89,30 @@ function banana () {alert("bunda");}
            </div>
            <!-- Modal Fim-->
        </div>
+
+        <div class="modal fade" id="detalhes" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal Conteudo-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+                <!-- Modal Corpo-->
+              <div class="modal-body" id="nome_produto">
+                {{prod}}
+                <input type="number" min="0" max="{{quantidade}}" ng-model="qtd">
+                <p>R${{valor}}</p>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+              </div>
+                <!-- Modal Rodapé-->
+              <div class="footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+
+<!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
+
