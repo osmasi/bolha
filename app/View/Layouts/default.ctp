@@ -153,22 +153,37 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     	</script>
 
 		<script>
-			var app = angular.module('myApp', []);
-			    app.controller('myCtrl', function ($scope) {
-			        $scope.preco1 = 150.00;
-			        $scope.preco2 = 44.90;
-			        $scope.preco3 = 92.60;
-			        $scope.preco4 = 115.30;
+			 var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope) {
+        
+        $scope.count = 0;
+        $scope.qtdTotal = 0;
 
-			        $scope.count1 = 0;
-			        $scope.count2 = 0;
-			        $scope.count3 = 0;
-			        $scope.count4 = 0;
+        $scope.addProduto = function () {
+            $scope.id = 0;
+            $scope.nome = '';
+            $scope.valor = 0;
+            $scope.qtd = 0;
+            $scope.quantidade = 0;
+        };
+        
+        $scope.adicionar = function () {
+            var myEl = angular.element( document.querySelector( '#prodAdicionado' ) );
+            myEl.append('<li class="description"><div class="row"><div class="col-sm-4">'+$scope.nome+'</div><div class="col-sm-4">Total: R$'+$scope.totalProduto+'</div><div class="col-sm-4">Quantidade: '+$scope.quantidade+'</div></div></li>'); 
+            $scope.total += $scope.totalProduto;
+            $scope.qtdTotal += $scope.quantidade;
+            $scope.nome = '';
+            $scope.totalProduto = 0;
+            $scope.quantidade = 0;
+        };
+        
+        $scope.prod = 0;
+        $scope.total = 0;
+        $scope.totalProduto = 0;
 
-			        $scope.pisca_botao = function(){
-			        	$scope.piscar = 'size:90000';
-			        }
-		    });
+
+    });
+
 		</script>
 
 </body>

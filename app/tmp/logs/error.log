@@ -1805,3 +1805,91 @@ Stack Trace:
 #1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
 #2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2016-01-06 20:36:25 Error: [MissingActionException] Action LojaController::pegarImg.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'pegarImg.php',
+)
+Request URL: /bolha/loja/pegarImg.php?id=+5
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-06 20:36:25 Error: [MissingActionException] Action LojaController::bobina4.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'bobina4.jpg',
+)
+Request URL: /bolha/loja/bobina4.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-06 20:36:26 Error: [MissingActionException] Action LojaController::bobina3.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'bobina3.jpg',
+)
+Request URL: /bolha/loja/bobina3.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-06 23:04:37 Error: [MissingActionException] Action LojaController::pegarImg.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'pegarImg.php',
+)
+Request URL: /bolha/loja/pegarImg.php?id=+5
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-06 23:05:28 Error: [MissingActionException] Action LojaController::pegarImg.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'pegarImg.php',
+)
+Request URL: /bolha/loja/pegarImg.php?id=+5
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-06 23:05:47 Error: [MissingActionException] Action LojaController::pegarImg.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'pegarImg.php',
+)
+Request URL: /bolha/loja/pegarImg.php?id=+5
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-06 23:10:25 Error: [MissingActionException] Action LojaController::pegarImg.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'pegarImg.php',
+)
+Request URL: /bolha/loja/pegarImg.php?id=+5
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-06 23:10:32 Error: [MissingActionException] Action LojaController::pegarImg.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'pegarImg.php',
+)
+Request URL: /bolha/loja/pegarImg.php?id=+5
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
