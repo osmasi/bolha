@@ -30,7 +30,11 @@
                                             //array('escape' => false));?>
                                         <?php echo $this->Html->link('<i class="fa fa-key"></i>',
                                                 array('action' => 'pass', $user['User']['id']),
-                                                array('escape' => false));?>
+                                                array('escape' => false));
+                                                ?> | <?php
+                                                echo $this->Form->postLink('Excluir',
+                                        					array('action' => 'delete', $user['User']['id']),
+                                        					array('confirm' => 'Tem Certeza?'))?>
                                         <?php //echo $this->Form->postLink('<i class="fa fa-trash-o"></i> ',
                                             //array('action' => 'delete', $user['User']['id']),
                                             //array('escape' => false, 'confirm' => 'Excluir o Usuário?') )?>

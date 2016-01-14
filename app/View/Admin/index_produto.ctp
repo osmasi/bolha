@@ -11,6 +11,7 @@
                         <thead>
                             <tr>
                                 <th>Nº</th>
+                                <th>Nome</th>
                                 <th>Descrição</th>
                                 <th>Imagem</th>
                                 <th>Tamanho</th>
@@ -28,6 +29,7 @@
                                             array('controller' => 'Admin', 'action' => 'edit_produto', $produto['Produto']['id'])); ?>
                                     </td>
                                     <td> <?php echo $produto['Produto']['nome']; ?></td>
+                                    <td> <?php echo $produto['Produto']['descricao']; ?></td>
                                     <td> <?php echo $produto['Produto']['imagem']; ?></td>
                                     <td> <?php echo $produto['Produto']['tamanho']; ?></td>
                                     <td> <?php echo $produto['Produto']['comprimento']; ?></td>

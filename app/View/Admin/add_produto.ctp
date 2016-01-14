@@ -13,12 +13,13 @@
                 <div class="form-group">
                     <?php echo $this->Form->create('Produto'); ?>
 
-                    <?php echo $this->Form->input('nome', array('label' => 'Descrição', 'class' => "form-control"));
+                    <?php echo $this->Form->input('nome', array('label' => 'Nome', 'class' => "form-control"));
+                        echo $this->Form->input('descricao', array('label' => 'Descrição', 'class' => "form-control"));
                         echo $this->Form->input('tamanho', array('label' => 'Tamanho', 'class' => "form-control"));
                         echo $this->Form->input('comprimento', array('label' => 'Comprimento', 'class' => "form-control"));
                         ?><br><?php
                         echo $this->Form->input('categoria', array('label' => 'Categoria',
-                      													'options' => array('1' => '1')));
+                      													'options' => array('1' => 'Plástico','2' => 'Papelão')));
                         ?><br><?php
                         echo $this->Form->input('valor', array('label' => 'Valor em Reais', 'class' => "form-control"));
                         echo $this->Form->input('quantidade', array('label' => 'Quantidade', 'class' => "form-control"));

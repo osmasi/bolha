@@ -1893,3 +1893,8 @@ Stack Trace:
 #1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
 #2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2016-01-13 22:34:34 Error: [MissingActionException] Action UsersController::delete_produto() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'delete_produto',
+)

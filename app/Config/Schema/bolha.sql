@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 29-Dez-2015 às 01:17
+-- Generation Time: 14-Jan-2016 às 23:37
 -- Versão do servidor: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `bolha`
--- Primeiro criar base de dados com o nome Bolha e depois executar o SQL no phpmyadmin
+--
 
 -- --------------------------------------------------------
 
@@ -32,14 +32,15 @@ CREATE TABLE IF NOT EXISTS `categorias` (
   `descricao` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Extraindo dados da tabela `categorias`
 --
 
 INSERT INTO `categorias` (`id`, `nome`, `descricao`) VALUES
-(1, 'bobina', 'bobina de plastico');
+(1, 'Plástico', 'Bobina de Plástico'),
+(2, 'Papelão', 'Bobina de Papelão');
 
 -- --------------------------------------------------------
 
@@ -58,7 +59,16 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `contato` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Extraindo dados da tabela `clientes`
+--
+
+INSERT INTO `clientes` (`id`, `nome`, `cnpj`, `email`, `telefone`, `celular`, `razaoSocial`, `contato`) VALUES
+(1, 'Tramontina S.A Cutelaria', '90.050.238/0001-14', 'cris.herpich@tramontina.net', '(51) 3634 7654', '(54) 9988-7766', 'Tramontina Cutelaria', 'Clovis'),
+(2, 'Brinox', '92.038.108/0001-91', 'marcelino@brinox.com', '(54) 3534535345', '(54) 9966-5544', 'Brinox FÃ¡brica de Utilidades DomÃ©sticas', 'Marcelino'),
+(3, 'Trombini', '11.252.642/0013-38', 'Antonio@Trombini.com', '(54) 3454-1218', '(54) 8765-4321', 'Trombini Embalagens dde PapelÃ£o e PlÃ¡stico', 'Antonio Zanus');
 
 -- --------------------------------------------------------
 
@@ -139,6 +149,7 @@ CREATE TABLE IF NOT EXISTS `pedidos_produtos` (
 CREATE TABLE IF NOT EXISTS `produtos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
+  `descricao` text NOT NULL,
   `tamanho` varchar(45) NOT NULL,
   `comprimento` int(11) NOT NULL,
   `categoria` int(11) NOT NULL,
@@ -148,7 +159,14 @@ CREATE TABLE IF NOT EXISTS `produtos` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `fk_Produto_Categoria_idx` (`categoria`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `produtos`
+--
+
+INSERT INTO `produtos` (`id`, `nome`, `descricao`, `tamanho`, `comprimento`, `categoria`, `valor`, `quantidade`, `imagem`) VALUES
+(1, 'Bobina de PapelÃ£o Ondulado Kraft', 'Esta Bobina de PapelÃ£o Ondulado Ã© muito utilizado para fazer caixas litografadas e caixas pardas compactas.', '100', 1000, 2, 199, 10, NULL);
 
 -- --------------------------------------------------------
 
@@ -163,15 +181,15 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `role` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `username`, `role`, `password`) VALUES
-(1, 'admin', 'admin@admin.com', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
-(2, 'Cristian Herpich', 'cristian', 'admin', '$2a$10$ZK.X96fF/aAAzYK.WpURteqJoBaLeixAUlkgCZ/IUjPCaU4tC8MLa');
+(2, 'Cristian Herpich', 'cristian', 'admin', '$2a$10$ZK.X96fF/aAAzYK.WpURteqJoBaLeixAUlkgCZ/IUjPCaU4tC8MLa'),
+(3, 'teste', 'cristian', 'admin', '$2a$10$MFc4sa6fymtIM0Z5jyQMNu//25E4bd.2X8Mp5e28C1BFe4a71yaja');
 
 --
 -- Constraints for dumped tables
@@ -188,21 +206,4 @@ ALTER TABLE `enderecos`
 --
 ALTER TABLE `pedidos`
   ADD CONSTRAINT `cliente` FOREIGN KEY (`cliente`) REFERENCES `clientes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `formaPagamento` FOREIGN KEY (`formaPagamento`) REFERENCES `pagamentos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `pedidos_produtos`
---
-ALTER TABLE `pedidos_produtos`
-  ADD CONSTRAINT `id_pedido` FOREIGN KEY (`id_pedido`) REFERENCES `pedidos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `id_produto` FOREIGN KEY (`id_produto`) REFERENCES `produtos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `produtos`
---
-ALTER TABLE `produtos`
-  ADD CONSTRAINT `categoria` FOREIGN KEY (`categoria`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+  ADD CONSTRAINT `formaPagamento` FOREIGN KEY (`formaPagamento`)
