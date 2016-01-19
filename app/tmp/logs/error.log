@@ -1898,3 +1898,123 @@ Exception Attributes: array (
   'controller' => 'UsersController',
   'action' => 'delete_produto',
 )
+2016-01-19 22:53:37 Error: [MissingViewException] View file "Pages\img\team\1.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\1.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/1.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/1.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/1.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/1.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '1.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-19 22:53:38 Error: [MissingViewException] View file "Pages\img\team\2.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\2.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/2.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/2.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/2.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/2.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '2.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-19 22:53:38 Error: [MissingViewException] View file "Pages\img\team\4.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\4.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/4.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/4.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/4.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/4.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '4.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-19 22:53:38 Error: [MissingViewException] View file "Pages\img\team\3.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\3.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/3.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/3.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/3.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/3.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '3.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-19 23:00:02 Error: [MissingViewException] View file "Pages\img\team\3.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\3.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/3.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/3.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/3.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/3.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '3.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-19 23:00:02 Error: [MissingViewException] View file "Pages\img\team\1.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\1.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/1.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/1.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/1.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/1.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '1.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-19 23:00:02 Error: [MissingViewException] View file "Pages\img\team\2.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\2.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/2.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/2.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/2.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/2.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '2.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-19 23:00:02 Error: [MissingViewException] View file "Pages\img\team\4.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\4.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/4.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/4.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/4.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/4.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '4.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

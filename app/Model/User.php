@@ -38,5 +38,11 @@
 		            'message' => 'É necessário possuir ao menos 4 caracteres'
 		        ),
             ),
+            'username' => array(
+              'required' => array(
+                'rule' => 'isUnique',
+                'message'=> 'Usuário já existente'
+              )
+            )
         );
     }

@@ -14,7 +14,13 @@
                                 <th>Nome</th>
                                 <th>Login</th>
                                 <th>Role</th>
-                                <th> </th>
+                                <th>CNPJ</th>
+                                <th>E-mail</th>
+                                <th>Telefone</th>
+                                <th>Celular</th>
+                                <th>Razão Social</th>
+                                <th>Contato</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -25,6 +31,12 @@
                                     </td>
                                     <td> <?php echo $user['User']['username']; ?></td>
                                     <td> <?php echo $user['User']['role']; ?></td>
+                                    <td> <?php echo $user['User']['cnpj']; ?></td>
+                                    <td> <?php echo $user['User']['email']; ?></td>
+                                    <td> <?php echo $user['User']['telefone']; ?></td>
+                                    <td> <?php echo $user['User']['celular']; ?></td>
+                                    <td> <?php echo $user['User']['razaoSocial']; ?></td>
+                                    <td> <?php echo $user['User']['contato']; ?></td>
                                     <td><?php //echo $this->Html->link('<i class="fa fa-pencil-square-o"></i>',
                                             //array('action' => 'edit', $user['User']['id']),
                                             //array('escape' => false));?>

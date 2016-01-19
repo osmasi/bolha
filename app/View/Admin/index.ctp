@@ -20,7 +20,7 @@
             <div class="tile-stats">
                 <div class="icon"><i class="fa fa-users fa-5x"></i></div>
                 <h3><?php echo $this->Html->link("Clientes",
-                            array('controller' => 'admin', 'action' => 'index_cliente')); ?></h3>
+                            array('controller' => 'users', 'action' => 'index')); ?></h3>
                 <p>Cadastro de clientes.</p>
             </div>
         </div>

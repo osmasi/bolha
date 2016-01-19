@@ -12,21 +12,29 @@
 
                     <?php
                         echo $this->Form->input('nome',
-                            array('label' => 'Nome do usuário', 'class' => "form-control"));
+                            array('label' => 'Nome Completo', 'class' => "form-control"));
+                        echo $this->Form->input('username',
+                            array('label' => 'Login', 'class' => "form-control"));
                         echo $this->Form->input('role',
                             array('label' => 'Permissão de acesso', 'class' => "form-control",
-                                    'options' => array(
-                                        'desabilitado' => 'DESABILITADO',
-                                        'cliente' => 'Cliente',
-                                        'usuario' => 'Usuário Padrão',
-                                        'admin' => 'Administrador',
-                                        ),
-                                    ));
-                        echo $this->Form->input('username',
-                            array('label' => 'E-mail', 'class' => "form-control"));
-                        echo $this->Form->input('password',
-                            array('label' => 'Senha', 'class' => "form-control"));
-                        ?>
+                                'options' => array(
+                                    'desabilitado' => 'DESABILITADO',
+                                    'cliente' => 'Cliente',
+                            'usuario' => 'Usuário Padrão',
+                                    'admin' => 'Administrador',
+                              ),
+                                ));
+                              echo $this->Form->input('cnpj', array('label' => 'CNPJ', 'class' => "form-control"));
+                               echo $this->Form->input('email', array('label' => 'E-Mail', 'class' => "form-control"));
+                               echo $this->Form->input('telefone', array('label' => 'Telefone Fixo', 'class' => "form-control"));
+                               echo $this->Form->input('celular', array('label' => 'Celular', 'class' => "form-control"));
+                               echo $this->Form->input('razaoSocial', array('label' => 'Razão Social', 'class' => "form-control"));
+                               echo $this->Form->input('contato', array('label' => 'Contato', 'class' => "form-control"));
+
+
+                        echo $this->Form->input('id', array('type' => 'hidden'));
+                    ?>
+
 
                 </div>
 
