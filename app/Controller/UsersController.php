@@ -3,7 +3,7 @@
     class UsersController extends AppController {
 
         public $name = 'Users';
-        public $uses = array('User');
+        public $uses = array('User','Endereco');
 
         public function isAuthorized($user = null) {
             if (parent::isAuthorized($user))
@@ -121,7 +121,7 @@
         public function add_endereco(){
           	$this->set('id_usuario', $this->Auth->user('id'));
             if ($this->request->is('post')) {
-                if ($this->User->save($this->request->data)) {
+                if ($this->Endereco->save($this->request->data)) {
                     $this->Session->setFlash('Endereço cadastrado com sucesso!', 'default',
                         array('class' => "alert alert-success"));
                     $this->redirect(array('action' => 'index'));

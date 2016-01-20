@@ -4,7 +4,7 @@
     class AdminController extends AppController {
 
         public $name = 'Admin';
-        public $uses = array('Categoria', 'Cliente', 'Endereco', 'Pagamento', 'Pedido', 'Produto');
+        public $uses = array('Categoria', 'Endereco', 'Pagamento', 'Pedido', 'Produto');
 
         public function index() {
 
@@ -57,5 +57,5 @@
   			}
 
   		}
-      
+
     }
