@@ -44,6 +44,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<!-- Squad theme CSS -->
 	<link href="/bolha/css/style.css" rel="stylesheet">
 	<link href="/bolha/color/default.css" rel="stylesheet">
+
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
 	<!-- DataTables -->
     <link href="/bolha/css/datatables/tools/css/dataTables.tableTools.css" rel="stylesheet">
     <link href="/bolha/css/datatables/css/dataTables.bootstrap.css" rel="stylesheet">
@@ -96,7 +99,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         </div>
     </div>
 
-		<div id="footer">
+		<div id="footer" class="navbar-fixed-bottom">
 			<footer>
 				<div class="container">
 					<div class="row">
@@ -149,13 +152,19 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                        },
                    },
                });
+
+							 $('footer').mouseover(function(){
+								 $('footer').fadeOut('slow');
+							 });
            });
+
     	</script>
 
 		<script>
+
 			 var app = angular.module('myApp', []);
-    app.controller('myCtrl', function ($scope) {
-        
+    		app.controller('myCtrl', function ($scope) {
+
         $scope.count = 0;
         $scope.qtdTotal = 0;
 
@@ -166,17 +175,21 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             $scope.qtd = 0;
             $scope.quantidade = 0;
         };
-        
+
         $scope.adicionar = function () {
-            var myEl = angular.element( document.querySelector( '#prodAdicionado' ) );
-            myEl.append('<li class="description"><div class="row"><div class="col-sm-4">'+$scope.nome+'</div><div class="col-sm-4">Total: R$'+$scope.totalProduto+'</div><div class="col-sm-4">Quantidade: '+$scope.quantidade+'</div></div></li>'); 
+
+								var myEl = angular.element( document.querySelector( '#prodAdicionado' ) );
+            		myEl.append('<li class="description" data-dismiss="li"><div class="row"><div class="col-sm-4"><p font-size="8px">'+$scope.nome+
+								'</p></div><div class="col-sm-4"><p font-size="8px">Total: R$'+$scope.totalProduto+'</p></div><div class="col-sm-4"><p font-size="8px">Quantidade: '
+								+$scope.quantidade+'</p></div></div></li>');
+
             $scope.total += $scope.totalProduto;
             $scope.qtdTotal += $scope.quantidade;
             $scope.nome = '';
             $scope.totalProduto = 0;
             $scope.quantidade = 0;
         };
-        
+
         $scope.prod = 0;
         $scope.total = 0;
         $scope.totalProduto = 0;
