@@ -20,7 +20,7 @@
                                 <th>Celular</th>
                                 <th>Razão Social</th>
                                 <th>Contato</th>
-                                <th></th>
+                                <th>Opções</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,20 +37,19 @@
                                     <td> <?php echo $user['User']['celular']; ?></td>
                                     <td> <?php echo $user['User']['razaoSocial']; ?></td>
                                     <td> <?php echo $user['User']['contato']; ?></td>
-                                    <td><?php //echo $this->Html->link('<i class="fa fa-pencil-square-o"></i>',
-                                            //array('action' => 'edit', $user['User']['id']),
-                                            //array('escape' => false));?>
+                                    <td>
                                         <?php echo $this->Html->link('<i class="fa fa-key"></i>',
                                                 array('action' => 'pass', $user['User']['id']),
                                                 array('escape' => false));
-                                                ?> | <?php
-                                                echo $this->Form->postLink('Excluir',
-                                        					array('action' => 'delete', $user['User']['id']),
-                                        					array('confirm' => 'Tem Certeza?'))?>
-                                        <?php //echo $this->Form->postLink('<i class="fa fa-trash-o"></i> ',
-                                            //array('action' => 'delete', $user['User']['id']),
-                                            //array('escape' => false, 'confirm' => 'Excluir o Usuário?') )?>
-                                    </td>
+                                              echo " | ";
+                                              echo $this->Form->postLink('Excluir',
+                                        				array('action' => 'delete', $user['User']['id']),
+                                        				array('confirm' => 'Tem Certeza?'));
+                                              echo " | ";
+                                              $endereco = array('action' => 'add_endereco', $user['User']['id']);
+                                        			echo $this->Html->link('Cadastrar Endereço', $endereco);
+                                        ?>
+                                  </td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

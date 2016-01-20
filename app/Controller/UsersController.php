@@ -118,5 +118,17 @@
                 $this->redirect(array('action' => 'index'));
             }
         }
-
+        public function add_endereco(){
+          	$this->set('id_usuario', $this->Auth->user('id'));
+            if ($this->request->is('post')) {
+                if ($this->User->save($this->request->data)) {
+                    $this->Session->setFlash('Endereço cadastrado com sucesso!', 'default',
+                        array('class' => "alert alert-success"));
+                    $this->redirect(array('action' => 'index'));
+                }else{
+                    $this->Session->setFlash('Não foi possível realizar o cadastro. Por favor, tente novamente.', 'default',
+                        array('class' => "alert alert-danger"));
+                }
+            }
+        }
     }
