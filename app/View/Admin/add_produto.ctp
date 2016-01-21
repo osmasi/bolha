@@ -23,7 +23,11 @@
                         ?><br><?php
                         echo $this->Form->input('valor', array('label' => 'Valor em Reais', 'class' => "form-control"));
                         echo $this->Form->input('quantidade', array('label' => 'Quantidade', 'class' => "form-control"));
-                        //echo $this->Form->input('imagem', array('label' => 'Imagem', 'class' => "form-control"));?>
+                        //echo $this->Form->input('imagem', array('label' => 'Imagem', 'class' => "form-control"));
+
+
+                        echo $this->Form->input('imagem', array('type' => 'file'));
+                        ?>
                 </div>
 
                 <div class="form-group">

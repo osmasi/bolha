@@ -2196,3 +2196,95 @@ Stack Trace:
 #14 /var/www/html/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #15 /var/www/html/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #16 {main}
+2016-01-21 22:29:08 Error: [MissingActionException] Action LojaController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'admin',
+)
+Request URL: /bolha/loja/admin
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 22:42:34 Error: [MissingActionException] Action UsersController::index_endereco() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index_endereco',
+)
+Request URL: /bolha/users/index_endereco/4
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 22:47:38 Error: [MissingActionException] Action AdminController::index_endereco() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'index_endereco',
+)
+Request URL: /bolha/admin/index_endereco
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 22:47:55 Error: [MissingActionException] Action AdminController::index_endereco() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'index_endereco',
+)
+Request URL: /bolha/admin/index_endereco
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 23:04:19 Error: [MissingActionException] Action UsersController::edit_endereco() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'edit_endereco',
+)
+Request URL: /bolha/users/edit_endereco/1
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-21 23:10:19 Error: [MissingControllerException] Controller class EnderecoController could not be found.
+Exception Attributes: array (
+  'class' => 'EnderecoController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/endereco/index_endereco/5
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 23:10:41 Error: [MissingControllerException] Controller class EnderecoController could not be found.
+Exception Attributes: array (
+  'class' => 'EnderecoController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/endereco/index_endereco/5
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 23:10:47 Error: [MissingControllerException] Controller class EnderecoController could not be found.
+Exception Attributes: array (
+  'class' => 'EnderecoController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/endereco/index_endereco/5
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-21 23:12:15 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\bolha\app\Controller\UsersController.php, line 150]
+2016-01-21 23:12:15 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /bolha/users/edit_endereco/1
+Stack Trace:
+#0 C:\xampp\htdocs\bolha\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 150)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 150, Array)
+#2 C:\xampp\htdocs\bolha\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 150, Array)
+#3 C:\xampp\htdocs\bolha\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

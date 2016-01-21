@@ -118,6 +118,13 @@
                 $this->redirect(array('action' => 'index'));
             }
         }
+
+
+
+
+        /*
+        ** * ENDEREÇOS
+        */
         public function add_endereco(){
           	$this->set('id_usuario', $this->Auth->user('id'));
             if ($this->request->is('post')) {
@@ -131,4 +138,29 @@
                 }
             }
         }
+
+        public function index_endereco($id) {
+             $this->set('enderecos', $this->Endereco->find('all', array(
+                        'conditions' => "id_usuario = $id")));
+        }
+
+        function edit_endereco($id = null){
+            $this->Endereco->id = $id;
+
+            $this->set('id_usuario', $id);
+
+            if ($this->request->is('get')) {
+                $this->request->data = $this->Endereco->read();
+            } else {
+                if ($this->Endereco->save($this->request->data)) {
+                    $this->Session->setFlash('Endereço atualizado!', 'default',
+                        array('class' => "alert alert-success"));
+                    $this->redirect(array('action' => 'index_endereco'));
+                } else {
+                    $this->Session->setFlash('Não foi possível atualizar. Por favor, tente novamente.', 'default',
+                        array('class' => "alert alert-danger"));
+                }
+            }
+        }
+
     }

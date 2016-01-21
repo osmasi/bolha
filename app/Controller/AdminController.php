@@ -16,6 +16,9 @@
 
       public function add_produto() {
           if ($this->request->is('post')) {
+              if (!empty($this->data['Produto']['imagem']['name'])) {
+                $this->data['Produto']
+              }
               if ($this->Produto->save($this->request->data)) {
                   $this->Session->setFlash('Produto criado com sucesso!', 'default',
                       array('class' => "alert alert-success"));

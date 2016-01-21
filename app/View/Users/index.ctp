@@ -46,8 +46,8 @@
                                         				array('action' => 'delete', $user['User']['id']),
                                         				array('confirm' => 'Tem Certeza?'));
                                               echo " | ";
-                                              $endereco = array('action' => 'add_endereco', $user['User']['id']);
-                                        			echo $this->Html->link('Cadastrar Endereço', $endereco);
+                                              $endereco = array('action' => 'index_endereco', $user['User']['id']);
+                                        			echo $this->Html->link('Visualizar Endereços', $endereco);
                                         ?>
                                   </td>
                                 </tr>
