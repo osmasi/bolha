@@ -199,5 +199,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		</script>
 
+		<?php
+        	echo $this->Html->script('ckeditor/ckeditor');
+     	?>
+
 </body>
 </html>
