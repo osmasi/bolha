@@ -14,7 +14,7 @@
                     <?php echo $this->Form->create('Produto'); ?>
 
                     <?php echo $this->Form->input('nome', array('label' => 'Nome', 'class' => "form-control"));
-                        echo $this->Form->input('descricao', array('label' => 'Descrição', 'class' => "form-control"));
+                        echo $this->Form->input('descricao', array('label' => 'Descrição', 'class' => "ckeditor form-control", 'required' => false, 'rows' => "6"));
                         echo $this->Form->input('tamanho', array('label' => 'Tamanho', 'class' => "form-control"));
                         echo $this->Form->input('comprimento', array('label' => 'Comprimento', 'class' => "form-control"));
                         ?><br><?php
