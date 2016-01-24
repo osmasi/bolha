@@ -156,7 +156,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 							 $('footer').mouseover(function(){
 								 $('footer').fadeOut('slow');
 							 });
-           });
+							 $('#adicionar_carrinho').click(function(){
+								 var id = $('#id_carrinho').val();
+								 var quantidade = $('#quantidade_carrinho').val();
+								 $.ajax({
+									 type: "POST",
+									 url: "LojaController/addCarrinho",
+									 data: {id: id, quantidade: quantidade},
+									 success: function()
+									 {
+										 alert('data');
+									 }
+								 });
+							});
+						});
 
     	</script>
 

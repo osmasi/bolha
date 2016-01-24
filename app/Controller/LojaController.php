@@ -29,5 +29,11 @@
             #$user_login = $this->Auth->user('id');
             $this->set('todos_produtos', $this->Produto->find('all'));
 	    }
+      public function addCarrinho() {
+
+
+      }
+
+
 
     }

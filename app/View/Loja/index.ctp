@@ -1,7 +1,5 @@
 
-<?
-  $_SESSION['produtos'] = array(); 
-?>
+
 <div ng-app="myApp" ng-controller="myCtrl">
 <div class="x_title" >
     <h2>LOJA</h2>
@@ -81,15 +79,15 @@
                                     <h4 style="color:white">{{nome}}</h4>
                                 </li>
                                 <li class="list-group-item">
-                                    <input type="hidden" value="{{id}}" />
+                                    <input type="hidden" value="{{id}}" id='id_carrinho' />
                                     <h6>Preço {{valor|currency:"R$"}}</h6>
                                     <p font-size="8px">Total disponível em estoque <b>{{qtd - quantidade}}</b> unidades</p>
                                 </li>
                             </ul>
                             <div class="row">
                                 <div class="col-sm-4">Adicione ao carrinho:</div>
-                                <div class="col-sm-4"><input type='number' min="0" max="{{qtd}}" ng-model='quantidade'></div>
-                                <div class="col-sm-4"><button type='button' class="button success large left" ng-click="adicionar()" data-dismiss="modal">Adicionar</button></div>
+                                <div class="col-sm-4"><input type='number' min="0" max="{{qtd}}" ng-model='quantidade' id='quantidade_carrinho' value='{{quantidade}}'></div>
+                                <div class="col-sm-4"><button type='button' class="button success large left" id="adicionar_carrinho" data-dismiss="modal">Adicionar</button></div>
                             </div>
                             <label for="prod" ng-show="quantidade > 0">Total a pagar: {{totalProduto = valor * quantidade|currency:"R$"}}</label>
 
