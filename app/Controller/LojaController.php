@@ -30,28 +30,11 @@
                 if (!empty($this->data['AddCarrinho']['quantidade'])) {
                   $qtd = $this->data['AddCarrinho']['quantidade'];
                   $id = $this->data['AddCarrinho']['id'];
-                  $this->Session->write('produto'.$id,$qtd);
+                  $produto = array('id' => $id, 'qtd' => $qtd);
+                  $this->Session->write('produto'.$id,$produto);
                 }
             }
 	    }
-<<<<<<< HEAD
-=======
-
-
-        public function addCarrinho($id, $qtd) {
-            $this->Session->write('Carrinho.id', !isset($id) ? 'fodeo' : $id);
-            $this->Session->write('Carrinho.qtd', !isset($qtd) ? 'fodeo' : $qtd);
-
-     
-            echo "<script>alert('teste');</script>";
-
-
-            $this->Session->write('Carrinho.id', 'BANANA');
-            $_SESSION['Carrinho']['id'] = 'buceta';
-            $_SESSION['Carrinho']['buceta'] = 'aff';
-        }
->>>>>>> origin/master
-
 
 
     }

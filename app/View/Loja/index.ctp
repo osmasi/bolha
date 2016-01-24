@@ -20,7 +20,8 @@
                         </div>
             <?php }
             echo "<pre>";
-            print_r($this->Session->read('produto0'));
+            $sessao = "produto2";
+            print_r($this->Session->read($sessao));
             echo "</pre>"
             ?>
             </div>
@@ -48,7 +49,7 @@
 <?php echo "<pre>";
 print_r($this->Session->read('Carrinho'));
 echo "</pre>";?>
-                         
+
                                 <h5>Total: {{total | currency:"R$"}}</h5>
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -95,25 +96,18 @@ echo "</pre>";?>
                             </ul>
                             <div class="row">
 
-                              <div class="form-group">
-                                  <?php echo $this->Form->create('AddCarrinho'); ?>
-
-                                  <?php echo $this->Form->input('quantidade', array('label' => "Adicione ao carrinho a quantidade de:", 'class' => "form-control", 'type' => "number"));
-                                      echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{id}}"));
-                                      ?>
+                              <div class="form-group  col-md-4">
+                                <?php echo $this->Form->create('AddCarrinho');
+                                    echo "Adicionar ao Carrinho: ";
+                                    echo $this->Form->input('quantidade', array('for' => "qtd", 'class' => "col-sm-6", 'type' => "number", 'max' => "{{qtd}}"));
+                                    echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{id}}"));
+                                    echo $this->Form->input('nome', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{nome}}"));
+                                     ?>
                               </div>
 
-                              <div class="form-group">
-                                  <div class="form-group col-md-2">
-                                      <?php echo $this->Form->end(array('label' => 'Adicionar', 'class' => "btn btn-block")); ?>
-                                  </div>
-                              </div>
-                                <div class="col-sm-4">Adicione ao carrinho:</div>
-                                <div class="col-sm-4"><input type='number' min="0" max="{{qtd}}" ng-model='quantidade' id='quantidade_carrinho' value='{{quantidade}}'></div>
-                                <div class="col-sm-4"><button type='button' class="button success large left" id="adicionar_carrinho" data-dismiss="modal">Adicionar</button></div>
+                              <div class="form-group col-md-8">
+                                  <?php echo $this->Form->end(array('label' => 'Adicionar', 'class' => "col-sm-4 button success large left")); ?>
                             </div>
-                            <label for="prod" ng-show="quantidade > 0">Total a pagar: {{totalProduto = valor * quantidade|currency:"R$"}}</label>
-
                         </div>
                         <!-- Modal Rodapé-->
                         <div class="modal-footer">
