@@ -148,22 +148,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 							 $('footer').mouseover(function(){
 								 $('footer').fadeOut('slow');
 							 });
-							 $('#adicionar_carrinho').click(function(){
-								 var id = $('#id_carrinho').val();
-								 var quantidade = $('#quantidade_carrinho').val();
-								 $.ajax({
-									 type: "POST",
-									 url: "LojaController/addCarrinho",
-									 data: {id:id, quantidade:quantidade},
-									 success: function()
-									 {
-										 alert('foi!!! id '+id+' salvo com sucesso!!!');
-									 },
-									 error: function(){
-										 alert('o id '+id+' não foi, esta merda!');
-									 },
-								 });
-							});
+
 						});
 
     	</script>

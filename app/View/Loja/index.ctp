@@ -18,7 +18,11 @@
                             data-toggle="modal" data-target="#detalhes"><h6><?php echo $item['Produto']['nome']; ?></h6></label>
                           </div>
                         </div>
-            <?php } ?>
+            <?php }
+            echo "<pre>";
+            print_r($this->Session->read('produto0'));
+            echo "</pre>"
+            ?>
             </div>
 
             <div class="container col-sm-3">
@@ -85,6 +89,20 @@
                                 </li>
                             </ul>
                             <div class="row">
+
+                              <div class="form-group">
+                                  <?php echo $this->Form->create('AddCarrinho'); ?>
+
+                                  <?php echo $this->Form->input('quantidade', array('label' => "Adicione ao carrinho a quantidade de:", 'class' => "form-control", 'type' => "number"));
+                                      echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{id}}"));
+                                      ?>
+                              </div>
+
+                              <div class="form-group">
+                                  <div class="form-group col-md-2">
+                                      <?php echo $this->Form->end(array('label' => 'Adicionar', 'class' => "btn btn-block")); ?>
+                                  </div>
+                              </div>
                                 <div class="col-sm-4">Adicione ao carrinho:</div>
                                 <div class="col-sm-4"><input type='number' min="0" max="{{qtd}}" ng-model='quantidade' id='quantidade_carrinho' value='{{quantidade}}'></div>
                                 <div class="col-sm-4"><button type='button' class="button success large left" id="adicionar_carrinho" data-dismiss="modal">Adicionar</button></div>

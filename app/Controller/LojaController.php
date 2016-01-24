@@ -1,8 +1,6 @@
 
 <?php
-
     class LojaController extends AppController {
-
         public $name = 'Loja';
         public $uses = array('Categoria', 'Cliente', 'Endereco', 'Pagamento', 'Pedido', 'Produto');
 
@@ -28,11 +26,14 @@
         public function index() {
             #$user_login = $this->Auth->user('id');
             $this->set('todos_produtos', $this->Produto->find('all'));
+            if ($this->request->is('post')) {
+                if (!empty($this->data['AddCarrinho']['quantidade'])) {
+                  $qtd = $this->data['AddCarrinho']['quantidade'];
+                  $id = $this->data['AddCarrinho']['id'];
+                  $this->Session->write('produto'.$id,$qtd);
+                }
+            }
 	    }
-      public function addCarrinho() {
-        echo "<script>alert('teste');</script>";
-
-      }
 
 
 
