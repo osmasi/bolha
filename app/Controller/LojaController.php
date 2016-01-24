@@ -34,6 +34,23 @@
                 }
             }
 	    }
+<<<<<<< HEAD
+=======
+
+
+        public function addCarrinho($id, $qtd) {
+            $this->Session->write('Carrinho.id', !isset($id) ? 'fodeo' : $id);
+            $this->Session->write('Carrinho.qtd', !isset($qtd) ? 'fodeo' : $qtd);
+
+     
+            echo "<script>alert('teste');</script>";
+
+
+            $this->Session->write('Carrinho.id', 'BANANA');
+            $_SESSION['Carrinho']['id'] = 'buceta';
+            $_SESSION['Carrinho']['buceta'] = 'aff';
+        }
+>>>>>>> origin/master
 
 
 

@@ -44,6 +44,11 @@
                                 <ul class="pricing-table" id="prodAdicionado">
                                     <li class="title large"><h3 style="color:white">  {{qtdTotal}}     Produtos      <i class="fi-shopping-cart"></i></h3></li>
                                 </ul>
+
+<?php echo "<pre>";
+print_r($this->Session->read('Carrinho'));
+echo "</pre>";?>
+                         
                                 <h5>Total: {{total | currency:"R$"}}</h5>
                                 <div class="row">
                                     <div class="col-sm-6">
