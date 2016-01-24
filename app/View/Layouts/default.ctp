@@ -60,18 +60,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<nav class="gn-menu-wrapper">
 					<div class="gn-scroller">
 						<ul class="gn-menu">
-							<li class="gn-search-item">
-								<input placeholder="Search" type="search" class="gn-search">
-								<a class="gn-icon gn-icon-search"><span>search</span></a>
-							</li>
-							<li>
-								<a href="/bolha/pages/about" class="gn-icon gn-icon-download">Sobre</a>
-							</li>
+							<li><a href="/bolha/loja" class="gn-icon gn-icon-archive">Loja</a></li>
 							<li><a href="/bolha/pages/service" class="gn-icon gn-icon-cog">Serviços</a></li>
-							<li><a href="/bolha/pages/help" class="gn-icon gn-icon-help">Ajuda</a></li>
-							<li>
-								<a href="/bolha/pages/contact" class="gn-icon gn-icon-archive">Contato</a>
-							</li>
+							<li><a href="/bolha/pages/about" class="gn-icon gn-icon-download">Sobre</a></li>
+							<li><a href="/bolha/pages/help" class="gn-icon gn-icon-help">Contato</a></li>
 						</ul>
 					</div><!-- /gn-scroller -->
 				</nav>
