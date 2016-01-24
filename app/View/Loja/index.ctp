@@ -18,12 +18,7 @@
                             data-toggle="modal" data-target="#detalhes"><h6><?php echo $item['Produto']['nome']; ?></h6></label>
                           </div>
                         </div>
-            <?php }
-            echo "<pre>";
-            $sessao = "produto2";
-            print_r($this->Session->read($sessao));
-            echo "</pre>"
-            ?>
+            <?php } ?>
             </div>
 
             <div class="container col-sm-3">
@@ -43,12 +38,17 @@
                         <div class="modal-body">
                             <div class="content">
                                 <ul class="pricing-table" id="prodAdicionado">
-                                    <li class="title large"><h3 style="color:white">  {{qtdTotal}}     Produtos      <i class="fi-shopping-cart"></i></h3></li>
-                                </ul>
+                                    <li class="title large"><h3 style="color:white">  Produtos      <i class="fi-shopping-cart"></i></h3></li>
+                                    <?php foreach ($todos_produtos as $itens) {
+                                      $item = "produto".$itens['Produto']['id'];
+                                      $prod = $this->Session->read('produto'.$itens['Produto']['id']);
+                                      if($item == 'produto'.$prod['id']){ ?>
+                                        <li class="description">
+                                            <?php echo "<h6>".$itens['Produto']['nome'].' - quantidade ['.$prod['qtd']."]</h6>"; ?>
+                                        </li>
+                                      <?php } }?>
 
-<?php echo "<pre>";
-print_r($this->Session->read('Carrinho'));
-echo "</pre>";?>
+                                </ul>
 
                                 <h5>Total: {{total | currency:"R$"}}</h5>
                                 <div class="row">
