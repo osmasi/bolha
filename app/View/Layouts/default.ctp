@@ -154,13 +154,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 								 $.ajax({
 									 type: "POST",
 									 url: "LojaController/addCarrinho",
-									 data: {id: id, quantidade: quantidade},
+									 data: {id:id, quantidade:quantidade},
 									 success: function()
 									 {
-										 alert('foi!!!');
+										 alert('foi!!! id '+id+' salvo com sucesso!!!');
 									 },
 									 error: function(){
-										 alert('não foi esta merda!')
+										 alert('o id '+id+' não foi, esta merda!');
 									 },
 								 });
 							});
@@ -181,20 +181,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             $scope.nome = '';
             $scope.valor = 0;
             $scope.qtd = 0;
-            $scope.quantidade = 0;
-        };
-
-        $scope.adicionar = function () {
-
-								var myEl = angular.element( document.querySelector( '#prodAdicionado' ) );
-            		myEl.append('<li class="description" data-dismiss="li"><div class="row"><div class="col-sm-4"><p font-size="8px">'+$scope.nome+
-								'</p></div><div class="col-sm-4"><p font-size="8px">Total: R$'+$scope.totalProduto+'</p></div><div class="col-sm-4"><p font-size="8px">Quantidade: '
-								+$scope.quantidade+'</p></div></div></li>');
-
-            $scope.total += $scope.totalProduto;
-            $scope.qtdTotal += $scope.quantidade;
-            $scope.nome = '';
-            $scope.totalProduto = 0;
             $scope.quantidade = 0;
         };
 

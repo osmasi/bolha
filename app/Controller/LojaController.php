@@ -30,7 +30,7 @@
             $this->set('todos_produtos', $this->Produto->find('all'));
 	    }
       public function addCarrinho() {
-
+        echo "<script>alert('teste');</script>";
 
       }
 

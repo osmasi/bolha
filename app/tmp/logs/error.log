@@ -2068,3 +2068,223 @@ Stack Trace:
 #1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
 #2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2016-01-24 02:17:50 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:18:42 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:19:19 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:21:31 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:21:59 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:22:15 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:25:49 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:26:27 Error: [MissingActionException] Action LojaController::LojaController.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController.php',
+)
+Request URL: /bolha/loja/LojaController.php
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:27:03 Error: [MissingActionException] Action LojaController::LojaController.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController.php',
+)
+Request URL: /bolha/loja/LojaController.php
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:28:39 Error: [MissingActionException] Action LojaController::LojaController.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController.php',
+)
+Request URL: /bolha/loja/LojaController.php
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:29:04 Error: [MissingActionException] Action LojaController::bolha() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'bolha',
+)
+Request URL: /bolha/loja/bolha/LojaController.php
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:29:34 Error: [MissingActionException] Action LojaController::LojaController.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController.php',
+)
+Request URL: /bolha/loja/LojaController.php
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:29:55 Error: [MissingActionException] Action LojaController::LojaController.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController.php',
+)
+Request URL: /bolha/loja/LojaController.php
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:30:21 Error: [MissingActionException] Action LojaController::LojaController.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController.php',
+)
+Request URL: /bolha/loja/LojaController.php
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:31:27 Error: [MissingActionException] Action LojaController::AdminController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'AdminController',
+)
+Request URL: /bolha/loja/AdminController
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:32:22 Error: [MissingActionException] Action LojaController::AdminController.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'AdminController.php',
+)
+Request URL: /bolha/loja/AdminController.php?id=2&quantidade=0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:33:43 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho?id=2&quantidade=0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:34:30 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho?id=2&quantidade=0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:34:45 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho?id=2&quantidade=2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-24 02:35:29 Error: [MissingActionException] Action LojaController::LojaController() could not be found.
+Exception Attributes: array (
+  'controller' => 'LojaController',
+  'action' => 'LojaController',
+)
+Request URL: /bolha/loja/LojaController/addCarrinho?id=2&quantidade=0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
