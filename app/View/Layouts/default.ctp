@@ -118,98 +118,105 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<!-- Angular JS -->
 	<script src="/bolha/js/angular.min.js"></script>
 	<!-- Datatables -->
-        <script src="/bolha/js/datatables/js/jquery.dataTables.js"></script>
-        <script src="/bolha/js/datatables/js/dataTables.bootstrap.js"></script>
+    <script src="/bolha/js/datatables/js/jquery.dataTables.js"></script>
+    <script src="/bolha/js/datatables/js/dataTables.bootstrap.js"></script>
 
-        <script>
-           $(document).ready(function () {
-               otable1 = $('#dataTables').dataTable( {
-                   "language": {
-                       "emptyTable":     "Não há dados disponíveis na tabela",
-                       "info":           "Mostrando _START_ para _END_ de _TOTAL_ ",
-                       "infoEmpty":      "Mostrando 0-0 de 0 entradas",
-                       "infoFiltered":   "(filtrada de _MAX_ entradas totais)",
-                       "infoPostFix":    "",
-                       "thousands":      ",",
-                       "lengthMenu":     "Mostrar _MENU_ entradas",
-                       "loadingRecords": "Carregando...",
-                       "processing":     "Processando...",
-                       "search":         "Pesquisar: ",
-                       "zeroRecords":    "Nenhum registro correspondente encontrado",
-                       "paginate": {
-                           "first":      "Primeiro",
-                           "last":       "Último",
-                           "next":       "Póximo",
-                           "previous":   "Anterior"
-                       },
+    <script>
+       $(document).ready(function () {
+			otable1 = $('#dataTables').dataTable( {
+               "language": {
+                   "emptyTable":     "Não há dados disponíveis na tabela",
+                   "info":           "Mostrando _START_ para _END_ de _TOTAL_ ",
+                   "infoEmpty":      "Mostrando 0-0 de 0 entradas",
+                   "infoFiltered":   "(filtrada de _MAX_ entradas totais)",
+                   "infoPostFix":    "",
+                   "thousands":      ",",
+                   "lengthMenu":     "Mostrar _MENU_ entradas",
+                   "loadingRecords": "Carregando...",
+                   "processing":     "Processando...",
+                   "search":         "Pesquisar: ",
+                   "zeroRecords":    "Nenhum registro correspondente encontrado",
+                   "paginate": {
+                       "first":      "Primeiro",
+                       "last":       "Último",
+                       "next":       "Póximo",
+                       "previous":   "Anterior"
                    },
-               });
+               },
+			});
 
-							 $('footer').mouseover(function(){
-								 $('footer').fadeOut('slow');
-							 });
-							 $('#adicionar_carrinho').click(function(){
-								 var id = $('#id_carrinho').val();
-								 var quantidade = $('#quantidade_carrinho').val();
-								 $.ajax({
-									 type: "POST",
-									 url: "LojaController/addCarrinho",
-									 data: {id: id, quantidade: quantidade},
-									 success: function()
-									 {
-										 alert('foi!!!');
-									 },
-									 error: function(){
-										 alert('não foi esta merda!')
-									 },
-								 });
-							});
-						});
+			$('footer').mouseover(function(){
+				$('footer').fadeOut('slow');
+			});
+			
 
-    	</script>
+			$('#adicionar_carrinho').click(function(){
+				var id = $('#id_carrinho').val();
+				var quantidade = $('#quantidade_carrinho').val();
 
-		<script>
+alert('buceta: /bolha/loja/addCarrinho/' + id + '/' + quantidade);
+				$.ajax({
+					type: 'POST',
+					//url: '<?php echo $this->Html->url(array("controller" => "loja", "action" => "addCarrinho"));?>',
+					//data: {id: id, quantidade: quantidade},
+					url: '/bolha/loja/addCarrinho/' + id + '/' + quantidade,
+					success: function(){
+						alert('foi!!!');
+					},
+					error: function(requestObject, error, errorThrown) {
+				        alert(error);
+				        alert(errorThrown);
+				   }
+				});
 
-			 var app = angular.module('myApp', []);
-    		app.controller('myCtrl', function ($scope) {
+			});
+		
 
-        $scope.count = 0;
-        $scope.qtdTotal = 0;
+		});
+	</script>
 
-        $scope.addProduto = function () {
-            $scope.id = 0;
-            $scope.nome = '';
-            $scope.valor = 0;
-            $scope.qtd = 0;
-            $scope.quantidade = 0;
-        };
+	<script>
 
-        $scope.adicionar = function () {
+		var app = angular.module('myApp', []);
+		app.controller('myCtrl', function ($scope) {
 
-								var myEl = angular.element( document.querySelector( '#prodAdicionado' ) );
-            		myEl.append('<li class="description" data-dismiss="li"><div class="row"><div class="col-sm-4"><p font-size="8px">'+$scope.nome+
-								'</p></div><div class="col-sm-4"><p font-size="8px">Total: R$'+$scope.totalProduto+'</p></div><div class="col-sm-4"><p font-size="8px">Quantidade: '
-								+$scope.quantidade+'</p></div></div></li>');
+		    $scope.count = 0;
+		    $scope.qtdTotal = 0;
 
-            $scope.total += $scope.totalProduto;
-            $scope.qtdTotal += $scope.quantidade;
-            $scope.nome = '';
-            $scope.totalProduto = 0;
-            $scope.quantidade = 0;
-        };
-
-        $scope.prod = 0;
-        $scope.total = 0;
-        $scope.totalProduto = 0;
+		    $scope.addProduto = function () {
+		        $scope.id = 0;
+		        $scope.nome = '';
+		        $scope.valor = 0;
+		        $scope.qtd = 0;
+		        $scope.quantidade = 0;
+		    };
 
 
-    });
+		    $scope.adicionar = function () {
+				var myEl = angular.element( document.querySelector( '#prodAdicionado' ) );
+		        myEl.append('<li class="description" data-dismiss="li"><div class="row"><div class="col-sm-4"><p font-size="8px">'+$scope.nome+
+									'</p></div><div class="col-sm-4"><p font-size="8px">Total: R$'+$scope.totalProduto+'</p></div><div class="col-sm-4"><p font-size="8px">Quantidade: '
+									+$scope.quantidade+'</p></div></div></li>');
 
-		</script>
+		        $scope.total += $scope.totalProduto;
+		        $scope.qtdTotal += $scope.quantidade;
+		        $scope.nome = '';
+		        $scope.totalProduto = 0;
+		        $scope.quantidade = 0;
+		    };
 
-		<?php
-        	echo $this->Html->script('ckeditor/ckeditor');
-     	?>
+
+		    $scope.prod = 0;
+		    $scope.total = 0;
+		    $scope.totalProduto = 0;
+
+		});
+
+	</script>
+
+	<?php
+    	echo $this->Html->script('ckeditor/ckeditor');
+ 	?>
 
 </body>
 </html>
