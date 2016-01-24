@@ -29,15 +29,15 @@
             #$user_login = $this->Auth->user('id');
             $this->set('todos_produtos', $this->Produto->find('all'));
 	    }
-<<<<<<< HEAD
+
 
         public function addCarrinho($id, $qtd) {
             $this->Session->write('Carrinho.id', !isset($id) ? 'fodeo' : $id);
             $this->Session->write('Carrinho.qtd', !isset($qtd) ? 'fodeo' : $qtd);
-=======
-      public function addCarrinho() {
-        echo "<script>alert('teste');</script>";
->>>>>>> origin/master
+
+     
+            echo "<script>alert('teste');</script>";
+
 
             $this->Session->write('Carrinho.id', 'BANANA');
             $_SESSION['Carrinho']['id'] = 'buceta';
