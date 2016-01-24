@@ -165,8 +165,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 									 data: {id: id, quantidade: quantidade},
 									 success: function()
 									 {
-										 alert('data');
-									 }
+										 alert('foi!!!');
+									 },
+									 error: function(){
+										 alert('não foi esta merda!')
+									 },
 								 });
 							});
 						});
