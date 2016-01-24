@@ -142,6 +142,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                        "next":       "Póximo",
                        "previous":   "Anterior"
                    },
+<<<<<<< HEAD
                },
 			});
 
@@ -217,6 +218,61 @@ alert('buceta: /bolha/loja/addCarrinho/' + id + '/' + quantidade);
 	<?php
     	echo $this->Html->script('ckeditor/ckeditor');
  	?>
+=======
+               });
+
+							 $('footer').mouseover(function(){
+								 $('footer').fadeOut('slow');
+							 });
+							 $('#adicionar_carrinho').click(function(){
+								 var id = $('#id_carrinho').val();
+								 var quantidade = $('#quantidade_carrinho').val();
+								 $.ajax({
+									 type: "POST",
+									 url: "LojaController/addCarrinho",
+									 data: {id:id, quantidade:quantidade},
+									 success: function()
+									 {
+										 alert('foi!!! id '+id+' salvo com sucesso!!!');
+									 },
+									 error: function(){
+										 alert('o id '+id+' não foi, esta merda!');
+									 },
+								 });
+							});
+						});
+
+    	</script>
+
+		<script>
+
+			 var app = angular.module('myApp', []);
+    		app.controller('myCtrl', function ($scope) {
+
+        $scope.count = 0;
+        $scope.qtdTotal = 0;
+
+        $scope.addProduto = function () {
+            $scope.id = 0;
+            $scope.nome = '';
+            $scope.valor = 0;
+            $scope.qtd = 0;
+            $scope.quantidade = 0;
+        };
+
+        $scope.prod = 0;
+        $scope.total = 0;
+        $scope.totalProduto = 0;
+
+
+    });
+
+		</script>
+
+		<?php
+        	echo $this->Html->script('ckeditor/ckeditor');
+     	?>
+>>>>>>> origin/master
 
 </body>
 </html>
