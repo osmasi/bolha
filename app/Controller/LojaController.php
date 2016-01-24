@@ -33,6 +33,10 @@
                   $produto = array('id' => $id, 'qtd' => $qtd);
                   $this->Session->write('produto'.$id,$produto);
                 }
+                if (!empty($this->data['salvarPedido']['id'])) {
+                  $qtd = $this->data['salvarPedido']['quantidade'];
+                  $id = $this->data['salvarPedido']['id'];
+                }
             }
 	    }
 

@@ -40,11 +40,21 @@
                                 <ul class="pricing-table" id="prodAdicionado">
                                     <li class="title large"><h3 style="color:white">  Produtos      <i class="fi-shopping-cart"></i></h3></li>
                                     <?php foreach ($todos_produtos as $itens) {
-                                      $item = "produto".$itens['Produto']['id'];
-                                      $prod = $this->Session->read('produto'.$itens['Produto']['id']);
+                                      $item = "produto".$itens['Produto']['id']; //cria o nome produto + o id com base no banco de dados
+                                      $prod = $this->Session->read('produto'.$itens['Produto']['id']); //cria o nome produto + o id com base na session
+                                      $addId = $prod['id']; //id para adicionar ao banco
+                                      $addQtd = $prod['qtd']; //quantidade para add ao banco
+                                      $qtdTotal = $itens['Produto']['quantidade']; //quantidade total para validar o max
+                                      //compara se o produto do banco existe na session
                                       if($item == 'produto'.$prod['id']){ ?>
                                         <li class="description">
-                                            <?php echo "<h6>".$itens['Produto']['nome'].' - quantidade ['.$prod['qtd']."]</h6>"; ?>
+                                          <div class="form-group">
+                                            <?php echo "<h5>".$itens['Produto']['nome']."</h5>"; ?>
+                                            <?php echo $this->Form->create('salvarPedido');
+                                                echo $this->Form->input('quantidade', array('label' => "Quantidade", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd"));
+                                                echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "$addId"));
+                                                 ?>
+                                            </div>
                                         </li>
                                       <?php } }?>
 
@@ -52,13 +62,9 @@
 
                                 <h5>Total: {{total | currency:"R$"}}</h5>
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="alert-box alert" ng-show="nFinaliza">{{teste}} <a href="#" class="close" ng-click="nFinaliza = false">&times;</a></div>
-                                        <div class="alert-box success right" ng-show="finaliza">{{teste}} <a href="#" class="close" ng-click="finaliza = false">&times;</a></div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <button class="button alert large extend">Limpar</button>
-                                        <button class="button success large right extend" ng-click="finalizar()">Finalizar</button>
+                                    <div class="col-sm-12 form-group">
+                                        <div class="col-sm-6"></div>
+                                        <?php echo $this->Form->end(array('label' => 'Finalizar', 'class' => "button success large right extend col-sm-6")); ?>
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +105,7 @@
                               <div class="form-group  col-md-4">
                                 <?php echo $this->Form->create('AddCarrinho');
                                     echo "Adicionar ao Carrinho: ";
-                                    echo $this->Form->input('quantidade', array('for' => "qtd", 'class' => "col-sm-6", 'type' => "number", 'max' => "{{qtd}}"));
+                                    echo $this->Form->input('quantidade', array('for' => "qtd", 'class' => "col-sm-6", 'type' => "number", 'max' => "{{qtd}}", 'value' => "0"));
                                     echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{id}}"));
                                     echo $this->Form->input('nome', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{nome}}"));
                                      ?>
