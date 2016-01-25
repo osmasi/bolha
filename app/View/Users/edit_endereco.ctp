@@ -2,7 +2,7 @@
     <div class="col-md-12 col-xs-12">
         <div class="x_panel">
             <div class="x_title">
-                <h2>Edição de Endereços <small>Defina as permissões de acesso</small></h2>
+                <h2>Edição de Endereços</h2>
 
                 <div class="clearfix"></div>
             </div>
