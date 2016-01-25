@@ -152,35 +152,35 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			 });
 
 		});
-</script>
+	</script>
 
-<script>
-	    	var app = angular.module('myApp', []);
-	    	app.controller('myCtrl', function ($scope) {
+	<script>
+    	var app = angular.module('myApp', []);
+    	app.controller('myCtrl', function ($scope) {
 
-		        $scope.count = 0;
-		        $scope.qtdTotal = 0;
+	        $scope.count = 0;
+	        $scope.qtdTotal = 0;
 
-		        $scope.addProduto = function () {
-		            $scope.id = 0;
-		            $scope.nome = '';
-		            $scope.valor = 0;
-		            $scope.qtd = 0;
-		            $scope.quantidade = 0;
-		        };
+	        $scope.addProduto = function () {
+	            $scope.id = 0;
+	            $scope.nome = '';
+	            $scope.valor = 0;
+	            $scope.qtd = 0;
+	            $scope.quantidade = 0;
+	        };
 
-		        $scope.prod = 0;
-		        $scope.total = 0;
-		        $scope.totalProduto = 0;
+	        $scope.prod = 0;
+	        $scope.total = 0;
+	        $scope.totalProduto = 0;
 
 
-	   		});
+   		});
 
 	</script>
 
-		<?php
-        	echo $this->Html->script('ckeditor/ckeditor');
-     	?>
+	<?php
+    	echo $this->Html->script('ckeditor/ckeditor');
+ 	?>
 
 </body>
 </html>

@@ -36,5 +36,21 @@
             }
 	    }
 
+        public function addCarrinho() {            
+            $content = '<div> DEU CERTO </div>';
+          
+
+            if ($this->request->is('post')) {
+                
+                $content .= "id: ".$this->data['AddCarrinho']['id']." e qtd: ".$this->data['AddCarrinho']['quantidade'];
+
+
+                $this->Session->write('AAAAAAAAAAAAAAAAAAA', "tste");
+            }
+            
+            $this->set(compact('content'));
+            $this->render('ajax_response', 'ajax');
+        }
+
 
     }

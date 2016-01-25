@@ -11,7 +11,7 @@
             </div>
             <div class="x_content">
                 <div class="form-group">
-                    <?php echo $this->Form->create('Produto'); ?>
+                    <?php echo $this->Form->create('Produto', array('type' => 'file')); ?>
 
                     <?php echo $this->Form->input('nome', array('label' => 'Nome', 'class' => "form-control"));
                         echo $this->Form->input('descricao', array('label' => 'Descrição', 'class' => "ckeditor form-control", 'required' => false, 'rows' => "6"));

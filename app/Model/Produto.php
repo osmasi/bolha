@@ -9,9 +9,16 @@ class Produto extends AppModel {
 
     	$nome = (strtolower($img_info['filename'])) . '.' . $img_info['extension'];
 
-    	App:uses('File', 'Utility');
+
+    	App::uses('File', 'Utility');
     	$arquivo = new File($imagem['tmp_name']);
     	$arquivo->copy($dir . $nome);
-    	$arquiv->close();
+    	$arquivo->close();
+
+
+//echo "<br><br><br><br><pre>"; print_r($this->request->data); echo "</pre>";
+        return $nome;
+
     }
+
 }

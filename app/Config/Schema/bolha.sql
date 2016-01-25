@@ -96,9 +96,9 @@ CREATE TABLE IF NOT EXISTS `bolha`.`enderecos` (
   `perto` VARCHAR(255) NOT NULL,
   `id_usuario` INT NOT NULL,
   `numero` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id`, `id_usuario`),
+  PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC),
-  UNIQUE INDEX `usuario_UNIQUE` (`id_usuario` ASC),
+  INDEX `usuario_idx` (`id_usuario` ASC),
   CONSTRAINT `id_usuario`
     FOREIGN KEY (`id_usuario`)
     REFERENCES `bolha`.`usuarios` (`id`)
@@ -202,13 +202,14 @@ INSERT INTO `produtos` (`id`, `nome`, `tamanho`, `comprimento`, `categoria`, `va
 INSERT INTO `usuarios` (`id`, `nome`, `cnpj`, `email`, `telefone`, `celular`, `razaoSocial`, `contato`, `username`, `role`, `password`) VALUES
   (NULL, 'Vini', NULL, 'vini@banana.com', NULL, NULL, NULL, NULL, 'vini', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
   (NULL, 'Somar', NULL, 'osmar@diminuir.com', NULL, NULL, NULL, NULL, 'osmar', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
-  (NULL, 'Cristian', NULL, 'cristian@cristian.com', NULL, NULL, NULL, NULL, 'cristian', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC', 'admin'),
+  (NULL, 'Cristian', NULL, 'cristian@cristian.com', NULL, NULL, NULL, NULL, 'cristian', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
   (NULL, 'Guilherme', NULL, 'will.i@m.com', NULL, NULL, NULL, NULL, 'willian', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
   (NULL, 'Admin', NULL, 'admin@admin.com', NULL, NULL, NULL, NULL, 'admin', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC');
 
 INSERT INTO `enderecos` (`id`, `rua`, `bairro`, `cep`, `cidade`, `estado`, `pais`, `perto`, `id_usuario`, `numero`) VALUES
   (NULL, 'Eloi Seccondo', 'Conceição', '95700-000', 'Bento Gonçalves', 'RS', 'Brasilsilsil', 'Bertolini', '1', '110, fundos'),
-  (NULL, 'Não tem rua', 'Roça', '95700-000?', 'Bent... Tuiuti?', 'RS', 'Brasilsilsil', 'Judas perdeu as meia', '2', 'É a única casa lá');
+  (NULL, 'Não tem rua', 'Roça', '95700-000?', 'Bent... Tuiuti?', 'RS', 'Brasilsilsil', 'Judas perdeu as meia', '2', 'É a única casa lá'),
+  (NULL, 'Eloi Seccondo', 'Conceição', '95700-000', 'Bento Gonçalves', 'RS', 'Brasilsilsil', 'Bertolini', '2', '110, fundos');
 
 INSERT INTO `pagamentos` (`id`, `nome`, `formula`) VALUES
   (NULL, 'Boleto Bancário', 'a² = b² + c²'),

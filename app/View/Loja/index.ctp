@@ -1,3 +1,28 @@
+                                <div>
+                                    <h1>testando a banana:</h1>
+                                    <div id='testandobanana'></div>
+                                </div>
+<?php
+//  TENTANDO O AJAX
+
+    $data = $this->Js->get('#AddCarrinhoForm')->serializeForm(array('isForm' => true, 'inline' => true));
+
+    $this->Js->get('#AddCarrinhoForm')->event(
+   'submit',
+    $this->Js->request(
+    array('controller' => 'loja', 'action' => 'addCarrinho'),
+    array(
+        'update' => '#testandobanana',
+        'data' => $data,
+        'async' => true,    
+        'dataExpression'=>true,
+        'method' => 'POST',
+        'before' => "$('#modalContainer').load('carrinho.php')",
+    )
+  )
+);
+ echo $this->Js->writeBuffer(); 
+?>
 
 
 <div ng-app="myApp" ng-controller="myCtrl">
@@ -16,16 +41,21 @@
                             valor = <?php echo $item['Produto']['valor']; ?>;
                             qtd = <?php echo $item['Produto']['quantidade']; ?>"
                             data-toggle="modal" data-target="#detalhes"><h6><?php echo $item['Produto']['nome']; ?></h6></label>
+                            <?php echo $this->Html->image('produtos/bubble-wrap.jpg', array('width' => '100px', 'height' => '100px')); 
+                            //('$Product['Product']['filename']')?> 
                           </div>
                         </div>
             <?php } ?>
             </div>
 
-            <div class="container col-sm-3">
+            <div class="container col-sm-3" id='carrin'>
                 <button type="button" class="button alert large right" data-toggle="modal" data-target="#myModal"><h3 class="fi-shopping-cart" style="color:white"></h3></button>
             </div>
 
-            <!-- Modal -->
+
+
+<div id='modalContainer'></div>
+<!-- Modal -->
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal Conteudo-->
@@ -46,10 +76,10 @@
                                         <li class="description">
                                             <?php echo "<h6>".$itens['Produto']['nome'].' - quantidade ['.$prod['qtd']."]</h6>"; ?>
                                         </li>
-                                      <?php } }?>
+                                      <?php } } ?>
 
                                 </ul>
-
+<?php echo "<pre>"; print_r($_SESSION); echo "</pre>";?>
                                 <h5>Total: {{total | currency:"R$"}}</h5>
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -72,6 +102,7 @@
             </div>
             <!-- Modal Fim-->
 
+
             <!-- Modal -->
             <div class="modal fade" id="detalhes" role="dialog">
                 <div class="modal-dialog">
@@ -83,9 +114,9 @@
                         </div>
                         <!-- Modal Corpo-->
                         <div class="modal-body">
-
                             <ul class="pricing-table">
                                 <li class="title large">
+                            <?php echo $this->Html->image('produtos/bubble-wrap.jpg', array('width' => '100px', 'height' => '100px')); ?>
                                     <h4 style="color:white">{{nome}}</h4>
                                 </li>
                                 <li class="list-group-item">
@@ -97,7 +128,7 @@
                             <div class="row">
 
                               <div class="form-group  col-md-4">
-                                <?php echo $this->Form->create('AddCarrinho');
+                                <?php echo $this->Form->create('AddCarrinho', array('id' => 'AddCarrinhoForm', /*'default' => false,*/ 'url' => array('controller' => 'loja', 'action' => 'addCarrinho')));
                                     echo "Adicionar ao Carrinho: ";
                                     echo $this->Form->input('quantidade', array('for' => "qtd", 'class' => "col-sm-6", 'type' => "number", 'max' => "{{qtd}}"));
                                     echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{id}}"));
@@ -106,7 +137,8 @@
                               </div>
 
                               <div class="form-group col-md-8">
-                                  <?php echo $this->Form->end(array('label' => 'Adicionar', 'class' => "col-sm-4 button success large left")); ?>
+                                  <?php echo $this->Form->submit('Adicionar', array('class' => "col-sm-4 button success large left"));
+                                        echo $this->Form->end(); ?>
                             </div>
                         </div>
                         <!-- Modal Rodapé-->

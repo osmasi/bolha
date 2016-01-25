@@ -11,7 +11,6 @@
 
                 switch($user['role']){
                     case 'cliente':
-                    case 'usuario':
                         switch($this->action) {
                             case 'perfil':
                             case 'pass':
