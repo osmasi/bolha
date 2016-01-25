@@ -6,6 +6,33 @@
         public $name = 'Admin';
         public $uses = array('Categoria', 'Endereco', 'Pagamento', 'Pedido', 'Produto');
 
+        
+        public function isAuthorized($user = null) {
+        if (parent::isAuthorized($user))
+          return true;
+
+            switch($user['role']){
+                case 'admin':
+                    switch($this->action) {
+                        case 'index':
+                        case 'add_cliente':
+                        case 'add_produto':
+                        case 'edit_cliente':
+                        case 'edit_produto':
+                        case 'index_cliente':
+                        case 'index_produto':
+                            return true;
+                            break;
+                        default:
+                        $this->Session->setFlash('Não autorizado!', 'default', array('class' => "alert alert-danger"));
+                        $this->redirect(array('action' => 'index'));
+                            return false;
+                            break;
+                    }
+                    break;
+            }
+        }
+
         public function index() {
 
 	    }

@@ -69,11 +69,25 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				</nav>
 			</li>
 			<li><a href="/bolha">COMÉRCIO LTDA</a></li>
+        	<li>
+        		<?php //echo "<pre>"; print_r($this->Session->read()); echo "</pre>"; 
+	        		if (isset($this->Session->read()['Auth']['User'])) {
+	        		    $usuario = $this->Session->read()['Auth']['User'];
+	        		    echo "<a href='/bolha/users/index_perfil'>Bem-vindo(a), " . $usuario['nome'] . "</a>";
+	        		    echo "</li>";
+	        		    echo "<li><a href='/bolha/users/logout'>Sair</a></li>";
+	        		} else {
+	        			echo "<a href=''>Cadastrar</a>";
+	        			echo "</li>";
+	        			echo "<li><a href='/bolha/users/login'>Entrar</a></li>";
+	        		}
+        		?>
+        	</li>
 			<li><ul class="company-social">
-            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-        </ul>	</li>
+	            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+	            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+        	</ul></li>
 		</ul>
 	</div>
 	<div id="container" class="row">

@@ -31,23 +31,47 @@
 </div>
 <div ng-app="myApp" ng-controller="myCtrl">
 
-            <div class="container col-sm-9">
+<!--
+<div class="container">
+          <div class="row">
+              <?php $i = 0; 
+              foreach ($produtosHome as $item) { ?>
+              <div class="col-xs-6 col-sm-3 col-md-3">
+                  <div class="team boxed-grey">
+                      <div class="inner">
+              <h5><?php echo $item['Produto']['nome'] ?></h5>
+                          <p class="subtitle"><?php echo "R$ " . $item['Produto']['valor'] ?></p>
+                          <div class="avatar"><?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '200px', 'height' => '200px')); ?> </div>
+                      </div>
+                  </div>
+              </div>      
+              <?php $i++; if ($i >= 4) break; } ?>
+          </div>
+    </div>
+-->
+
+            <div class="container col-sm-11">
             <?php foreach ($todos_produtos as $item) { ?>
               <div class="animated flipInY col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <div class="tile-stats">
+                <div class="tile-stats team boxed-grey">
             <label ng-click="addProduto();
                             id = <?php echo $item['Produto']['id'] ?>;
                             nome = '<?php echo $item['Produto']['nome']; ?>';
                             valor = <?php echo $item['Produto']['valor']; ?>;
-                            qtd = <?php echo $item['Produto']['quantidade']; ?>"
-                            data-toggle="modal" data-target="#detalhes"><h6><?php echo $item['Produto']['nome']; ?></h6></label>
-                            <?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '100px', 'height' => '100px')); ?> 
-                          </div>
-                        </div>
+                            qtd = <?php echo $item['Produto']['quantidade']; ?>;
+                            desc = '<?php echo $item['Produto']['descricao']; ?>'"
+                  data-toggle="modal" data-target="#detalhes">
+                  <div class="inner" >
+                    <h6><?php echo $item['Produto']['nome']; ?></h6>
+                    <?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '100px', 'height' => '100px')); ?>
+                  </div>
+            </label> 
+                </div>
+              </div>
             <?php } ?>
             </div>
 
-            <div class="container col-sm-3" align="right">
+            <div class="container col-sm-1" align="right">
                 <button type="button" class="button alert large right" data-toggle="modal" data-target="#myModal"><h3 class="fi-shopping-cart" style="color:white"></h3>Carrinho</button>
             </div>
 

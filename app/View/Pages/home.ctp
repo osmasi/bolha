@@ -42,53 +42,20 @@ App::uses('Debugger', 'Utility');
 			</div>
 		</div>
 		<div class="container">
-
-        <div class="row">
-            <div class="col-xs-6 col-sm-3 col-md-3">
-
-                <div class="team boxed-grey">
-                    <div class="inner">
-												<h5>SIMP-BOBINA</h5>
-                        <p class="subtitle">BOBINA DE PLASTICO BOLHA 10mm SIMP-BOBINA 1,30m X 100m</p>
-                        <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive" /></div>
-                    </div>
-                </div>
-
-            </div>
-						<div class="col-xs-6 col-sm-3 col-md-3">
-
-                <div class="team boxed-grey">
-                    <div class="inner">
-												<h5>SOFT</h5>
-                        <p class="subtitle">BOBINA DE PLASTICO BOLHA SOFT 1,30x100m</p>
-                        <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive" /></div>
-                    </div>
-
-									</div>
-            </div>
-						<div class="col-xs-6 col-sm-3 col-md-3">
-
-                <div class="team boxed-grey">
-                    <div class="inner">
-												<h5>SOFT MICRAS</h5>
-                        <p class="subtitle">BOBINA DE PLASTICO BOLHA SOFT 40 MICRAS 1,30m x 100m</p>
-                        <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive" /></div>
-                    </div>
-                </div>
-
-            </div>
-						<div class="col-xs-6 col-sm-3 col-md-3">
-
-                <div class="team boxed-grey">
-                    <div class="inner">
-												<h5>KRAFT PURO</h5>
-                        <p class="subtitle">BOBINA DE PAPEL KRAFT PURO 60cm x 200m x 80g/m²</p>
-                        <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive" /></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+	        <div class="row">
+	            <?php $i = 0; 
+	            foreach ($produtosHome as $item) { ?>
+	            <div class="col-xs-6 col-sm-3 col-md-3">
+	                <div class="team boxed-grey">
+	                    <div class="inner">
+							<h5><?php echo $item['Produto']['nome'] ?></h5>
+	                        <p class="subtitle"><?php echo $item['Produto']['descricao'] ?></p>
+	                        <div class="avatar"><?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '200px', 'height' => '200px')); ?> </div>
+	                    </div>
+	                </div>
+	            </div>			
+	            <?php $i++; if ($i >= 4) break; } ?>
+	        </div>
 		</div>
 	</section>
 	<!-- /Section: about -->

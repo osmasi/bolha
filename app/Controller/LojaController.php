@@ -4,24 +4,12 @@
         public $name = 'Loja';
         public $uses = array('Categoria', 'Cliente', 'Endereco', 'Pagamento', 'Pedido', 'Produto');
 
-        public function isAuthorized($user = null) {
-    		if (parent::isAuthorized($user))
-    			return true;
 
-                switch($user['role']){
-                    case 'cliente':
-                    case 'usuario':
-                        switch($this->action) {
-                            case 'index':
-                                return true;
-                                break;
-                            default:
-                                return false;
-                                break;
-                        }
-                        break;
-                }
-	    }
+        public function beforeFilter() {
+          parent::beforeFilter();
+          $this->Auth->allow('index');
+        }
+        
 
         public function index() {
             #$user_login = $this->Auth->user('id');

@@ -31,6 +31,7 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    public $uses = array('Produto');
     public $components = array(
   		'Session',
   		'Auth' => array(
@@ -55,13 +56,17 @@ class AppController extends Controller {
           parent::beforeFilter();
           $this->Auth->allow('login', 'logout', 'display');
           $this->set('role', $this->Auth->user('role'));
+
+          
+          $this->set('produtosHome', $this->Produto->find('all'));
+
   	}
 
     public function isAuthorized($user = null) {
         if($user['role'] == 'admin'){
-		    return true;
+		      return true;
         }else{
-            return true;
+          return false;
         }
     }
 }
