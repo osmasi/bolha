@@ -15,6 +15,8 @@
                             array('label' => 'Nome Completo', 'class' => "form-control"));
                         echo $this->Form->input('username',
                             array('label' => 'Login', 'class' => "form-control"));
+                            echo $this->Form->input('password',
+                                array('label' => 'Senha', 'class' => "form-control"));
                         echo $this->Form->input('role',
                             array('label' => 'Permissão de acesso', 'class' => "form-control",
                                 'options' => array(

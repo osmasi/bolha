@@ -2068,3 +2068,360 @@ Stack Trace:
 #1 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LojaController), Object(CakeRequest))
 #2 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2016-01-25 00:08:50 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\wamp\www\bolha\app\Controller\AdminController.php, line 21]
+2016-01-25 00:08:50 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /bolha/admin
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bol...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\bol...', 21, Array)
+#2 C:\wamp\www\bolha\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\bol...', 21, Array)
+#3 C:\wamp\www\bolha\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-25 00:12:17 Error: [MissingActionException] Action UsersController::index_perfil() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index_perfil',
+)
+Request URL: /bolha/users/index_perfil
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-25 00:14:40 Error: [MissingActionException] Action AdminController::index_cliente() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'index_cliente',
+)
+Request URL: /bolha/admin/index_cliente
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-25 00:14:59 Error: [MissingActionException] Action AdminController::index_cliente() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'index_cliente',
+)
+Request URL: /bolha/admin/index_cliente
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-25 00:15:01 Error: [MissingActionException] Action AdminController::index_cliente() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'index_cliente',
+)
+Request URL: /bolha/admin/index_cliente
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-25 01:37:10 Error: [MissingActionException] Action UsersController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin',
+)
+Request URL: /bolha/users/admin
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-25 01:38:19 Error: [MissingControllerException] Controller class EnderecosController could not be found.
+Exception Attributes: array (
+  'class' => 'EnderecosController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/enderecos/add
+Stack Trace:
+#0 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-25 01:40:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '5' pour la clef 'usuario_UNIQUE'
+Request URL: /bolha/users/add_endereco
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('INSERT INTO `bo...', Array)
+#2 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(1014): DboSource->execute('INSERT INTO `bo...')
+#3 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Endereco), Array, Array)
+#4 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\bolha\app\Controller\UsersController.php(130): Model->save(Array)
+#6 [internal function]: UsersController->add_endereco()
+#7 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-01-25 01:46:56 Error: [MissingViewException] View file "Pages\img\team\4.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\4.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/4.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/4.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/4.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/4.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '4.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 01:46:56 Error: [MissingViewException] View file "Pages\img\team\2.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\2.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/2.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/2.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/2.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/2.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '2.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 01:46:56 Error: [MissingViewException] View file "Pages\img\team\1.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\1.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/1.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/1.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/1.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/1.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '1.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 01:46:56 Error: [MissingViewException] View file "Pages\img\team\3.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\3.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/3.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/3.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/3.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/3.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '3.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 01:47:22 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/logout
+Stack Trace:
+#0 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-25 01:47:36 Error: [MissingViewException] View file "Pages\img\team\4.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\4.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/4.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/4.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/4.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/4.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '4.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 01:47:36 Error: [MissingViewException] View file "Pages\img\team\2.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\2.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/2.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/2.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/2.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/2.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '2.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 01:47:37 Error: [MissingViewException] View file "Pages\img\team\3.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\3.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/3.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/3.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/3.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/3.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '3.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 01:47:37 Error: [MissingViewException] View file "Pages\img\team\1.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\1.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/1.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/1.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/1.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/1.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '1.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 01:50:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '3' pour la clef 'usuario_UNIQUE'
+Request URL: /bolha/users/add_endereco
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('INSERT INTO `bo...', Array)
+#2 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(1014): DboSource->execute('INSERT INTO `bo...')
+#3 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Endereco), Array, Array)
+#4 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\bolha\app\Controller\UsersController.php(130): Model->save(Array)
+#6 [internal function]: UsersController->add_endereco()
+#7 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-01-25 01:51:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`bolha`.`enderecos`, CONSTRAINT `id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /bolha/users/delete/3
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('DELETE `User` F...', Array)
+#2 C:\wamp\www\bolha\lib\Cake\Model\Datasource\Database\Mysql.php(455): DboSource->execute('DELETE `User` F...')
+#3 C:\wamp\www\bolha\lib\Cake\Model\Model.php(2709): Mysql->delete(Object(User), Array)
+#4 C:\wamp\www\bolha\app\Controller\UsersController.php(114): Model->delete('3')
+#5 [internal function]: UsersController->delete('3')
+#6 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-01-25 01:53:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '3' pour la clef 'usuario_UNIQUE'
+Request URL: /bolha/users/add_endereco
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('INSERT INTO `bo...', Array)
+#2 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(1014): DboSource->execute('INSERT INTO `bo...')
+#3 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Endereco), Array, Array)
+#4 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\bolha\app\Controller\UsersController.php(130): Model->save(Array)
+#6 [internal function]: UsersController->add_endereco()
+#7 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-01-25 02:02:03 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '3' pour la clef 'usuario_UNIQUE'
+Request URL: /bolha/users/add_endereco
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('INSERT INTO `bo...', Array)
+#2 C:\wamp\www\bolha\lib\Cake\Model\Datasource\DboSource.php(1014): DboSource->execute('INSERT INTO `bo...')
+#3 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Endereco), Array, Array)
+#4 C:\wamp\www\bolha\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\bolha\app\Controller\UsersController.php(130): Model->save(Array)
+#6 [internal function]: UsersController->add_endereco()
+#7 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2016-01-25 02:06:14 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\wamp\www\bolha\app\View\Users\add_endereco.ctp, line 33]
+2016-01-25 02:06:14 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /bolha/users/add_endereco
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bol...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\bol...', 33, Array)
+#2 C:\wamp\www\bolha\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\bol...', 33, Array)
+#3 C:\wamp\www\bolha\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-25 02:31:39 Error: [MissingViewException] View file "Pages\img\team\2.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\2.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/2.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/2.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/2.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/2.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '2.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 02:31:39 Error: [MissingViewException] View file "Pages\img\team\1.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\1.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/1.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/1.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/1.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/1.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '1.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 02:31:39 Error: [MissingViewException] View file "Pages\img\team\3.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\3.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/3.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/3.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/3.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/3.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '3.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 02:31:39 Error: [MissingViewException] View file "Pages\img\team\4.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\team\\4.jpg.ctp',
+)
+Request URL: /bolha/pages/img/team/4.jpg
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\View\View.php(470): View->_getViewFileName('img/team/4.jpg')
+#1 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(960): View->render('img/team/4.jpg', NULL)
+#2 C:\wamp\www\bolha\app\Controller\PagesController.php(70): Controller->render('img/team/4.jpg')
+#3 [internal function]: PagesController->display('img', 'team', '4.jpg')
+#4 C:\wamp\www\bolha\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\bolha\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\wamp\www\bolha\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-01-25 02:40:43 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\wamp\www\bolha\app\Controller\UsersController.php, line 34]
+2016-01-25 02:40:43 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /bolha/users
+Stack Trace:
+#0 C:\wamp\www\bolha\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\bol...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\bol...', 34, Array)
+#2 C:\wamp\www\bolha\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\bol...', 34, Array)
+#3 C:\wamp\www\bolha\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
