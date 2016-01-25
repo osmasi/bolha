@@ -193,11 +193,11 @@ INSERT INTO `categorias` (`id`, `nome`, `descricao`) VALUES
   (NULL, 'Papelão', 'Não-tão-super bobina de papelão');
 
 INSERT INTO `produtos` (`id`, `nome`, `tamanho`, `comprimento`, `categoria`, `valor`, `quantidade`, `imagem`, `descricao`) VALUES
-  (NULL, 'Bolha Banana', '10', '100', '1', '666', '500', '', 'Maravilhoso plástico bolha na cor banana. Ideal para festas infantis!'),
-  (NULL, 'Plástico Bolha Comum', '10', '100', '1', '200', '1000', '', 'Plástico bolha daquele comumzinho que usam pra proteger as coisas frágeis. Ou estourar! :D'),
-  (NULL, 'Bolha Extra Bolha', '10', '100', '1', '400', '300', '', 'Plástico bolha extra bolha - bolhas com ploc ploc extra, ou plástico com mais bolhas por m²? Compre e descubra! o/'),
-  (NULL, 'Papelão Comum', '10', '100', '2', '100', '1000', '', 'Papelão comum - marrom, se molhar derrete. Ideal para caixas.'),
-  (NULL, 'Papelão Ondulado', '10', '100', '2', '200', '500', '', 'É mais caro que o comum. E mais bonito :)');
+  (NULL, 'Bolha Banana', '10', '100', '1', '666', '500', 'laranja.jpg', 'Maravilhoso plástico bolha na cor banana. Ideal para festas infantis!'),
+  (NULL, 'Plástico Bolha Comum', '10', '100', '1', '200', '1000', 'normal.jpg', 'Plástico bolha daquele comumzinho que usam pra proteger as coisas frágeis. Ou estourar! :D'),
+  (NULL, 'Bolha Extra Bolha', '10', '100', '1', '400', '300', 'bubble-wrap.jpg', 'Plástico bolha extra bolha - bolhas com ploc ploc extra, ou plástico com mais bolhas por m²? Compre e descubra! o/'),
+  (NULL, 'Papelão Comum', '10', '100', '2', '100', '1000', 'caixa_papelao_01.png', 'Papelão comum - marrom, se molhar derrete. Ideal para caixas.'),
+  (NULL, 'Papelão Ondulado', '10', '100', '2', '200', '500', 'papelao-ondulado2.jpg', 'É mais caro que o comum. E mais bonito :)');
 
 INSERT INTO `usuarios` (`id`, `nome`, `cnpj`, `email`, `telefone`, `celular`, `razaoSocial`, `contato`, `username`, `role`, `password`) VALUES
   (NULL, 'Vini', NULL, 'vini@banana.com', NULL, NULL, NULL, NULL, 'vini', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),

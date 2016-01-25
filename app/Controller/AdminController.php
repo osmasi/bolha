@@ -17,16 +17,15 @@
       public function add_produto() {
           if ($this->request->is('post')) {  
          
-            $dados = $this->request->data; 
-            if (!empty($this->request->data['Produto']['imagem']['name'])) {
-              $dados['Produto']['imagem'] = $this->Produto->upload($this->data['Produto']['imagem']);
-//echo "<br><br><br><br><pre>"; print_r($dados); echo "</pre>";
-              if ($this->Produto->save($dados)) {
+            $dados = $this->request->data;          //salva o request->data numa variavel q pode ser editada
+            if (!empty($this->request->data['Produto']['imagem']['name'])) {    //se foi enviada img, faz o cadastro
+              $dados['Produto']['imagem'] = $this->Produto->upload($this->data['Produto']['imagem']);   //array imagem vira string com o nome da img
+              if ($this->Produto->save($dados)) {                                                       //a funcao upload salva o arquivo e retorna o nome
                 $this->Session->setFlash('Produto criado com sucesso!', 'default', array('class' => "alert alert-success"));
                 $this->redirect(array('action' => 'index_produto'));
-              }else
+              } else
                   $this->Session->setFlash('Não foi possível cadastrar o Produto. Por favor, tente novamente.', 'default', array('class' => "alert alert-danger"));
-            } else {
+            } else {              //se nao foi enviada img, n tem como cadastrar (todo produto tem q ter img)
               $this->Session->setFlash('Não foi possível cadastrar pois nenhuma imagem foi enviada.', 'default', array('class' => "alert alert-danger"));
               $this->redirect(array('action' => 'add_produto'));
             }
@@ -38,16 +37,26 @@
           $this->Produto->id = $id;
 
           if ($this->request->is('get')) {
-              $this->request->data = $this->Produto->read();
+            $this->request->data = $this->Produto->read();
           } else {
-              if ($this->Produto->save($this->request->data)) {
-                  $this->Session->setFlash('Produto atualizado!', 'default',
-                      array('class' => "alert alert-success"));
-                  $this->redirect(array('action' => 'index_produto'));
-              } else {
-                  $this->Session->setFlash('Não foi possível atualizar. Por favor, tente novamente.', 'default',
-                      array('class' => "alert alert-danger"));
-              }
+            $dados = $this->request->data;           //salva o request->data numa variavel q pode ser editada
+            if (!empty($this->request->data['Produto']['imagem']['name'])) {    //se foi enviada uma nova img, faz o cadastro normal
+              $dados['Produto']['imagem'] = $this->Produto->upload($this->data['Produto']['imagem']);   //array imagem vira string com o nome da img
+              if ($this->Produto->save($dados)) {                                                       //a funcao upload salva o arquivo e retorna o nome
+                $this->Session->setFlash('Produto atualizado com sucesso!', 'default', array('class' => "alert alert-success"));
+                $this->redirect(array('action' => 'index_produto'));
+              } else
+                  $this->Session->setFlash('Não foi possível atualizar o Produto. Por favor, tente novamente.', 'default', array('class' => "alert alert-danger"));
+            } else {        //se n foi enviada img, quer dizer q eh pra manter a q ja esta sendo usada
+                        //o jeito q axei pra fazer isso foi especificar quais campos deveriam ser salvos - todos menos o de img
+              if ($this->Produto->save($dados, array(
+                  'fieldList' => array('id', 'descricao', 'tamanho', 'comprimento', 'categoria', 'valor', 'quantidade')))) 
+              {
+                $this->Session->setFlash('Produto atualizado com sucesso!', 'default', array('class' => "alert alert-success"));
+                $this->redirect(array('action' => 'index_produto'));
+              } else
+                  $this->Session->setFlash('Não foi possível atualizar o Produto. Por favor, tente novamente.', 'default', array('class' => "alert alert-danger"));
+            }
           }
       }
 

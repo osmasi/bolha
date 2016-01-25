@@ -11,10 +11,10 @@
             </div>
             <div class="x_content">
                 <div class="form-group">
-                    <?php echo $this->Form->create('Produto'); ?>
+                    <?php echo $this->Form->create('Produto', array('type' => 'file')); ?>
 
-                    <?php echo $this->Form->input('nome', array('label' => 'Descrição', 'class' => "form-control"));
-                        echo $this->Form->input('descricao', array('label' => 'Descrição', 'class' => "form-control"));
+                    <?php echo $this->Form->input('nome', array('label' => 'Nome', 'class' => "form-control"));
+                        echo $this->Form->input('descricao', array('label' => 'Descrição', 'class' => "ckeditor form-control", 'required' => false, 'rows' => "6"));
                         echo $this->Form->input('tamanho', array('label' => 'Tamanho', 'class' => "form-control"));
                         echo $this->Form->input('comprimento', array('label' => 'Comprimento', 'class' => "form-control"));
                         ?><br><?php
@@ -22,7 +22,9 @@
                       													'options' => array('1' => 'Plástico','2' => 'Papelão')));
                         ?><br><?php
                         echo $this->Form->input('valor', array('label' => 'Valor em Reais', 'class' => "form-control"));
-                        echo $this->Form->input('quantidade', array('label' => 'Quantidade', 'class' => "form-control"));?>
+                        echo $this->Form->input('quantidade', array('label' => 'Quantidade', 'class' => "form-control"));
+                        echo $this->Form->input('imagem', array('type' => 'file', 'label' => 'Imagem', 'class' => 'form-control'));
+                    ?>
 
                 </div>
 

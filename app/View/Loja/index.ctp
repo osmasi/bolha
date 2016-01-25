@@ -41,8 +41,7 @@
                             valor = <?php echo $item['Produto']['valor']; ?>;
                             qtd = <?php echo $item['Produto']['quantidade']; ?>"
                             data-toggle="modal" data-target="#detalhes"><h6><?php echo $item['Produto']['nome']; ?></h6></label>
-                            <?php echo $this->Html->image('produtos/bubble-wrap.jpg', array('width' => '100px', 'height' => '100px')); 
-                            //('$Product['Product']['filename']')?> 
+                            <?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '100px', 'height' => '100px')); ?> 
                           </div>
                         </div>
             <?php } ?>
@@ -66,7 +65,7 @@
                         <div class="modal-body">
                             <ul class="pricing-table">
                                 <li class="title large">
-                            <?php echo $this->Html->image('produtos/bubble-wrap.jpg', array('width' => '100px', 'height' => '100px')); ?>
+                            <?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '200px', 'height' => '200px')); ?>
                                     <h4 style="color:white">{{nome}}</h4>
                                 </li>
                                 <li class="list-group-item">
