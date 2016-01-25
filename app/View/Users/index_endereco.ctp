@@ -2,7 +2,7 @@
     <div class="col-md-12 col-xs-12">
         <div class="x_panel">
             <div class="x_title">
-                <h2>Cadastro de Endereços <small>Clique no endereço para editar</small></h2>
+                <h2>Cadastro de Endereços </h2>
 
                 <div class="clearfix"></div>
             </div>
@@ -48,8 +48,8 @@
                     </table>
                 </div>
                 <div class="form-group col-md-2">
-                  <?php echo $this->Html->link('Cadastrar Usuário',
-                      array('controller' => 'enderecos', 'action' => 'add'),
+                  <?php echo $this->Html->link('Cadastrar Endereço',
+                      array('controller' => 'users', 'action' => 'add_endereco'),
                       array('class' => "btn btn-dark" )); ?>
                 </div>
                 <div class="form-group col-md-2">

@@ -82,7 +82,6 @@
             $user_login = $this->Auth->user('id');
             $user_full = $this->User->find('all', array(
                                 'conditions' => "id = $user_login"));
-
             $this->set('user_full', $user_full);
         }
 
@@ -160,6 +159,10 @@
                         array('class' => "alert alert-danger"));
                 }
             }
+        }
+
+        public function index_perfil(){
+
         }
 
     }

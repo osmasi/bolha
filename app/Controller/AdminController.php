@@ -33,6 +33,7 @@
 
          }
       }
+      
       public function edit_produto($id = null) {
           $this->Produto->id = $id;
 
