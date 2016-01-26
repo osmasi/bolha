@@ -96,25 +96,23 @@
                                     <input type="hidden" value="{{id}}" id='id_carrinho' />
                                     <h6>Preço {{valor|currency:"R$"}}</h6>
                                     <p font-size="8px">Total disponível em estoque <b>{{qtd - quantidade}}</b> unidades</p>
-                                    {{desc}} 
+                                    {{desc}}
                                 </div>
                             </div>
                             <div class="row">
-
-                              <div class="form-group  col-md-4">
-                                <?php echo $this->Form->create('AddCarrinho');//, array('id' => 'AddCarrinhoForm', /*'default' => false,*/ 'url' => array('controller' => 'loja', 'action' => 'addCarrinho'))*/);
-                                    echo "Adicionar ao Carrinho: ";
-                                    echo $this->Form->input('quantidade', array('for' => "qtd", 'class' => "col-sm-6", 'type' => "number", 'max' => "{{qtd}}", 'value' => "0"));
+                                <?php echo $this->Form->create('AddCarrinho'); ?>
+                                  <div class="form-group  col-md-8">
+                                    <? echo $this->Form->input('quantidade', array('label' => "Adicionar ao Carrinho:&nbsp", 'type' => "number", 'max' => "{{qtd}}", 'min'=>"0",'value' => "0"));
                                     echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{id}}"));
                                     echo $this->Form->input('nome', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{nome}}"));
                                      ?>
-                              </div>
-
-                              <div class="form-group col-md-8">
-                                  <?php echo $this->Form->submit('Adicionar', array('class' => "col-sm-4 button success large left"));
-                                        echo $this->Form->end(); ?>
+                                  </div>
+                                  <div class="form-group  col-md-4">
+                                    <?php echo $this->Form->submit('Adicionar', array('class' => "button success large right"));
+                                    echo $this->Form->end(); ?>
+                                  </div>
                             </div>
-                        </div>
+
                         <!-- Modal Rodapé-->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -155,6 +153,7 @@
                                             <?php $nomeItem = $itens['Produto']['nome']; ?>
                                             <div class="col-sm-3 boxed-grey" align="left">
                                               <? echo $this->Form->input('quantidade', array('label' => "$nomeItem", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd")); ?>
+                                              <button type="button" class="close">&times;</button>
                                             </div>
                                             <div class="col-sm-1"></div>
                                             <? echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control col-sm-4", 'type' => "hidden", 'value' => "$addId")); ?>
