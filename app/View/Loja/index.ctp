@@ -1,12 +1,10 @@
-                                <div>
+                         <div>
                                     <h1>testando a banana:</h1>
                                     <div id='testandobanana'></div>
                                 </div>
 <?php
 //  TENTANDO O AJAX
-
     $data = $this->Js->get('#AddCarrinhoForm')->serializeForm(array('isForm' => true, 'inline' => true));
-
     $this->Js->get('#AddCarrinhoForm')->event(
    'submit',
     $this->Js->request(
@@ -14,14 +12,14 @@
     array(
         'update' => '#testandobanana',
         'data' => $data,
-        'async' => true,
+        'async' => true,    
         'dataExpression'=>true,
         'method' => 'POST',
         'before' => "$('#modalContainer').load('carrinho.php')",
     )
   )
 );
- echo $this->Js->writeBuffer();
+ echo $this->Js->writeBuffer(); 
 ?>
 
 
@@ -34,7 +32,7 @@
 <!--
 <div class="container">
           <div class="row">
-              <?php $i = 0;
+              <?php $i = 0; 
               foreach ($produtosHome as $item) { ?>
               <div class="col-xs-6 col-sm-3 col-md-3">
                   <div class="team boxed-grey">
@@ -44,7 +42,7 @@
                           <div class="avatar"><?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '200px', 'height' => '200px')); ?> </div>
                       </div>
                   </div>
-              </div>
+              </div>      
               <?php $i++; if ($i >= 4) break; } ?>
           </div>
     </div>
@@ -65,7 +63,7 @@
                     <h6><?php echo $item['Produto']['nome']; ?></h6>
                     <?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '100px', 'height' => '100px')); ?>
                   </div>
-            </label>
+            </label> 
                 </div>
               </div>
             <?php } ?>
@@ -87,18 +85,17 @@
                         </div>
                         <!-- Modal Corpo-->
                         <div class="modal-body">
-                            <div class="pricing-table">
-                                <div class="title large">
-                                    <?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '200px', 'height' => '200px')); ?>
+                            <ul class="pricing-table">
+                                <li class="title large">
+                            <?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '200px', 'height' => '200px')); ?>
                                     <h4 style="color:white">{{nome}}</h4>
-                                </div>
-                                <div class="list-group-item">
+                                </li>
+                                <li class="list-group-item">
                                     <input type="hidden" value="{{id}}" id='id_carrinho' />
                                     <h6>Preço {{valor|currency:"R$"}}</h6>
                                     <p font-size="8px">Total disponível em estoque <b>{{qtd - quantidade}}</b> unidades</p>
-                                    {{desc}} 
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                             <div class="row">
 
                               <div class="form-group  col-md-4">
@@ -130,7 +127,7 @@
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog">
                 <!-- Modal Conteudo-->
                 <div class="modal-content">
                     <div class="modal-header">
@@ -140,9 +137,8 @@
                     <!-- Modal Corpo-->
                     <div class="modal-body">
                         <div class="content">
-                            <div class="panel panel-default" id="prodAdicionado">
-                                <div class="panel-header"><h3 style="background-color:black; color:white" align="center">  Produtos      <i class="fi-shopping-cart"></i></h3></div>
-                                <div class="panel-body form-group row">
+                            <ul class="pricing-table" id="prodAdicionado">
+                                <li class="title large"><h3 style="color:white">  Produtos      <i class="fi-shopping-cart"></i></h3></li>
                                 <?php foreach ($todos_produtos as $itens) {
                                   $item = "produto".$itens['Produto']['id']; //cria o nome produto + o id com base no banco de dados
                                   $prod = $this->Session->read('produto'.$itens['Produto']['id']); //cria o nome produto + o id com base na session
@@ -151,22 +147,25 @@
                                   $qtdTotal = $itens['Produto']['quantidade']; //quantidade total para validar o max
                                   //compara se o produto do banco existe na session
                                   if($item == 'produto'.$prod['id']){ ?>
-                                          <?php echo $this->Form->create('salvarPedido'); ?>
-                                            <?php $nomeItem = $itens['Produto']['nome']; ?>
-                                            <div class="col-sm-3 boxed-grey" align="left">
-                                              <? echo $this->Form->input('quantidade', array('label' => "$nomeItem", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd")); ?>
-                                            </div>
-                                            <div class="col-sm-1"></div>
-                                            <? echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control col-sm-4", 'type' => "hidden", 'value' => "$addId")); ?>
+                                    <li class="description">
+                                      <div class="form-group">
+                                        <?php echo "<h4>".$itens['Produto']['nome']."</h4><h6>"; ?>
+                                        <?php echo $this->Form->create('salvarPedido');
+                                            echo $this->Form->input('quantidade', array('label' => "Quantidade", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd"));
+                                            echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "$addId"));
+                                             ?>
+                                        </h6></div>
+                                    </li>
                                   <?php } }?>
-                                  </div>
-                            </div>
 
-                            <h5>Total:</h5>
+                            </ul>
+
+                            <h5>Total: {{total | currency:"R$"}}</h5>
                             <div class="row">
                               <div class="col-sm-6"></div>
                                 <button type="button" class="button success large right extend col-sm-6" data-toggle="modal" data-target="#pagamento" data-dismiss="modal">Finalizar</button>
                             </div>
+                        </div>
                     </div>
                     <!-- Modal Rodapé-->
                     <div class="modal-footer">
