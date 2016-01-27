@@ -151,7 +151,7 @@ if(!isset($this->Session->read()['Auth']['User'])){
                                   if($item == 'produto'.$prod['id']){ ?>
                                     <?php $nomeItem = $itens['Produto']['nome']; ?>
                                     <div class="col-sm-3 boxed-grey" align="left">
-                                        <? echo $this->Form->input('quantidade', array('label' => "$nomeItem", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd")); ?>
+                                        <?php echo $this->Form->input('quantidade', array('label' => "$nomeItem", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd")); ?>
                                         <?php
                                             array_push($arrayCarrinho, array('id' => $addId, 'valor' => $valorItem, 'quantidade' => $addQtd));
                                             foreach ($arrayCarrinho as $prod) {

@@ -176,12 +176,13 @@
         }
 
         public function add_perfil_endereco(){
-            	$this->set('id_user', $this->Auth->user('id'));
-          	if ($this->request->is('post')) {
+            $this->set('id_usuario', $this->Auth->user('id'));
+          	
+            if ($this->request->is('post')) {
                 if ($this->Endereco->save($this->request->data)) {
                     $this->Session->setFlash('Endereço cadastrado com sucesso!', 'default',
                         array('class' => "alert alert-success"));
-                    $this->redirect(array('action' => 'index_perfil_endereco'));
+                    $this->redirect(array('action' => 'index_perfil_endereco/'.$this->Auth->user('id')));
                 }else{
                     $this->Session->setFlash('Não foi possível realizar o cadastro. Por favor, tente novamente.', 'default',
                         array('class' => "alert alert-danger"));
@@ -197,10 +198,10 @@
 
         public function index_perfil_endereco($id) {
              $this->set('enderecos', $this->Endereco->find('all', array(
-                        'conditions' => "id_usuario = $id")));
+                        'conditions' => "id_usuario =" . $this->Auth->user('id'))));
         }
 
-        function edit_endereco($id = null){
+        public function edit_endereco($id = null){
             $this->Endereco->id = $id;
 
             $this->set('id_usuario', $id);
@@ -230,7 +231,7 @@
                 if ($this->Endereco->save($this->request->data)) {
                     $this->Session->setFlash('Endereço atualizado!', 'default',
                         array('class' => "alert alert-success"));
-                    $this->redirect(array('action' => 'index_perfil_endereco'));
+                    $this->redirect(array('action' => 'index_perfil_endereco/'.$id));
                 } else {
                     $this->Session->setFlash('Não foi possível atualizar. Por favor, tente novamente.', 'default',
                         array('class' => "alert alert-danger"));
@@ -247,7 +248,7 @@
 
         public function index_pedidos($id) {
              $this->set('pedidos', $this->Pedido->find('all', array(
-                        'conditions' => "usuario = $id")));
+                        'conditions' => "usuario =" . $this->Auth->user('id'))));
         }
 
         public function view_produtos($id = null) {

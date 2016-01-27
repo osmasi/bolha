@@ -8,7 +8,7 @@
             </div>
             <div class="x_content">
                 <div class="form-group">
-                    <?php echo $this->Form->create('Endereco', array('action' => 'edit_perfil_endereco')); ?>
+                    <?php echo $this->Form->create('Endereco'); ?>
 
                     <?php
                         echo $this->Form->input('rua', array('label' => 'Rua', 'class' => "form-control"));
@@ -19,7 +19,7 @@
                         echo $this->Form->input('estado', array('label' => 'Estado', 'class' => "form-control"));
                         echo $this->Form->input('pais', array('label' => 'País', 'class' => "form-control"));
                         echo $this->Form->input('perto', array('label' => 'Perto de', 'class' => "form-control"));
-                        echo $this->Form->input('id_usuario', array('value' => "$id_user", 'type' => 'hidden'));
+                        echo $this->Form->input('id_usuario', array('value' => "$id_usuario", 'type' => 'hidden'));
                         echo $this->Form->input('id', array('type' => 'hidden'));
                     ?>
                 </div>

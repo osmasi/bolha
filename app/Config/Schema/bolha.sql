@@ -200,7 +200,7 @@ INSERT INTO `produtos` (`id`, `nome`, `tamanho`, `comprimento`, `categoria`, `va
   (NULL, 'Papelão Ondulado', '10', '100', '2', '200', '500', 'papelao-ondulado2.jpg', 'É mais caro que o comum. E mais bonito :)');
 
 INSERT INTO `usuarios` (`id`, `nome`, `cnpj`, `email`, `telefone`, `celular`, `razaoSocial`, `contato`, `username`, `role`, `password`) VALUES
-  (NULL, 'Vini', NULL, 'vini@banana.com', NULL, NULL, NULL, NULL, 'vini', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
+  (NULL, 'Vini', NULL, 'vini@banana.com', NULL, NULL, NULL, NULL, 'vini', 'cliente', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
   (NULL, 'Somar', NULL, 'osmar@diminuir.com', NULL, NULL, NULL, NULL, 'osmar', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
   (NULL, 'Cristian', NULL, 'cristian@cristian.com', NULL, NULL, NULL, NULL, 'cristian', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
   (NULL, 'Guilherme', NULL, 'will.i@m.com', NULL, NULL, NULL, NULL, 'willian', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),

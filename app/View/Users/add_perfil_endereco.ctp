@@ -11,17 +11,16 @@
                     <?php echo $this->Form->create('Endereco'); ?>
 
                     <?php
-                        echo $this->Form->input('rua',
-                            array('label' => 'Rua', 'class' => "form-control"));
-                        echo $this->Form->input('bairro',
-                            array('label' => 'Bairro', 'class' => "form-control"));
-                        echo $this->Form->input('cep',array('label' => 'CEP', 'class' => "form-control"));
-                              echo $this->Form->input('cidade', array('label' => 'Cidade', 'class' => "form-control"));
-                               echo $this->Form->input('estado', array('Estado' => 'E-Mail', 'maxlength' => '2', 'class' => "form-control"));
-                               echo $this->Form->input('pais', array('label' => 'País', 'class' => "form-control"));
-                               echo $this->Form->input('perto', array('label' => 'Perto de', 'class' => "form-control"));
-                               echo $this->Form->input('numero', array('label' => 'Número', 'class' => "form-control"));
-                               echo $this->Form->input('id_usuario', array('value' => "$id_user", 'type' => 'hidden'));
+                       echo $this->Form->input('rua', array('label' => 'Rua', 'class' => "form-control"));
+                       echo $this->Form->input('bairro', array('label' => 'Bairro', 'class' => "form-control"));
+                       echo $this->Form->input('cep',array('label' => 'CEP', 'class' => "form-control"));
+                       echo $this->Form->input('cidade', array('label' => 'Cidade', 'class' => "form-control"));
+                       echo $this->Form->input('estado', array('Estado' => 'E-Mail', 'maxlength' => '2', 'class' => "form-control"));
+                       echo $this->Form->input('pais', array('label' => 'País', 'class' => "form-control"));
+                       echo $this->Form->input('perto', array('label' => 'Perto de', 'class' => "form-control"));
+                       echo $this->Form->input('numero', array('label' => 'Número', 'class' => "form-control"));
+                       echo $this->Form->input('id_usuario', array('value' => "$id_usuario", 'type' => 'hidden'));
+                       echo $this->Form->input('id', array('type' => 'hidden'));
                     ?>
 
 
@@ -33,7 +32,7 @@
                     </div>
                     <div class="form-group col-md-2">
                         <?php echo $this->Html->link('Voltar',
-                            array('controller' => 'users', 'action' => "index_perfil_endereco"),
+                            array('controller' => 'users', 'action' => "index_perfil_endereco/$id_usuario"),
                             array('class' => "btn btn-dark btn-block" )); ?>
                     </div>
                 </div>
