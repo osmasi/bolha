@@ -89,6 +89,7 @@
         }
 
         function edit_perfil($id = null){
+            //$this->request->onlyAllow('post');
             $this->User->id = $id;
 
             if ($this->request->is('get')) {

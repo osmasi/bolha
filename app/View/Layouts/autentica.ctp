@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>BOLHA</title>
+    <title>Login</title>
 
     <?php
 		echo $this->Html->meta('icon');
@@ -41,7 +41,7 @@
             <div id="login" class="animate form heading-about marginbot-50" style='text-align: center;'>
                 <section class="login_content">
                         <br>
-                        <h1>Login</h1>
+                        <h1>Acesse sua conta</h1>
                         <div>
                             <?php echo $this->Session->flash(); ?>
                             <?php echo $this->fetch('content'); ?>
@@ -50,9 +50,7 @@
                         <div class="separator">
                             <div class="clearfix"></div>
                             <br />
-                            <div>
-                                <p>©2015 All Rights Reserved. By <a>Os</a></p>
-                            </div>
+                            
                         </div>
 
                 </section>

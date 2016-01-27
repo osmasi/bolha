@@ -11,6 +11,8 @@ endif;
 
 App::uses('Debugger', 'Utility');
 ?>
+
+<?php $this->assign('title', 'Sobre'); ?>
 <!-- Section: about -->
 <section id="works" class="home-section text-center bg-gray">
     <div class="heading-works marginbot-50">

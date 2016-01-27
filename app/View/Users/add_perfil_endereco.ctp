@@ -1,3 +1,5 @@
+<?php $this->assign('title', 'Cadastrar Novo Endereço'); ?>
+
 <fieldset>
     <div class="col-md-12 col-xs-12">
         <div class="x_panel">

@@ -12,6 +12,7 @@ endif;
 App::uses('Debugger', 'Utility');
 ?>
 
+<?php $this->assign('title', 'Serviços'); ?>
 <!-- Section: services -->
 <section id="service" class="home-section text-center">
 

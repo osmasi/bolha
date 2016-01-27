@@ -200,11 +200,12 @@ INSERT INTO `produtos` (`id`, `nome`, `tamanho`, `comprimento`, `categoria`, `va
   (NULL, 'Papelão Ondulado', '10', '100', '2', '200', '500', 'papelao-ondulado2.jpg', 'É mais caro que o comum. E mais bonito :)');
 
 INSERT INTO `usuarios` (`id`, `nome`, `cnpj`, `email`, `telefone`, `celular`, `razaoSocial`, `contato`, `username`, `role`, `password`) VALUES
-  (NULL, 'Vini', NULL, 'vini@banana.com', NULL, NULL, NULL, NULL, 'vini', 'cliente', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
+  (NULL, 'Vini', '(cnpj)', 'vini@banana.com', '54-9999-9999', '54-9999-9999', '(razaosocial)', 'Vini', 'vini', 'cliente', '$2a$10$noMgjsAg8rCclsrCe600.OmdA0dsxC.3oo3j8iyNP67aav7nSlUuO'),
   (NULL, 'Somar', NULL, 'osmar@diminuir.com', NULL, NULL, NULL, NULL, 'osmar', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
   (NULL, 'Cristian', NULL, 'cristian@cristian.com', NULL, NULL, NULL, NULL, 'cristian', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
   (NULL, 'Guilherme', NULL, 'will.i@m.com', NULL, NULL, NULL, NULL, 'willian', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
-  (NULL, 'Admin', NULL, 'admin@admin.com', NULL, NULL, NULL, NULL, 'admin', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC');
+  (NULL, 'Admin', NULL, 'admin@admin.com', NULL, NULL, NULL, NULL, 'admin', 'admin', '$2a$10$H2kiY1SjXnrKeXQCJewgLuGfX.KXyU2Nigm4kjZydHqqj4P2CL8AC'),
+  (NULL, 'Cliente', NULL, 'cliente@cliente.com', NULL, NULL, NULL, NULL, 'cliente', 'cliente', '$2a$10$noMgjsAg8rCclsrCe600.OmdA0dsxC.3oo3j8iyNP67aav7nSlUuO');
 
 INSERT INTO `enderecos` (`id`, `rua`, `bairro`, `cep`, `cidade`, `estado`, `pais`, `perto`, `id_usuario`, `numero`) VALUES
   (NULL, 'Eloi Seccondo', 'Conceição', '95700-000', 'Bento Gonçalves', 'RS', 'Brasilsilsil', 'Bertolini', '1', '110, fundos'),

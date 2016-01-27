@@ -1,3 +1,5 @@
+<?php $this->assign('title', 'Painel do Usuário'); ?>
+
 <fieldset>
     <div class="x_title">
         <h2>Cliente</h2>

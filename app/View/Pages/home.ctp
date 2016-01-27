@@ -12,6 +12,7 @@ endif;
 App::uses('Debugger', 'Utility');
 ?>
 
+<?php $this->assign('title', 'Comércio'); ?>
 <body data-spy="scroll">
 
 	<!-- Section: intro -->

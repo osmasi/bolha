@@ -11,6 +11,8 @@ endif;
 
 App::uses('Debugger', 'Utility');
 ?>
+
+<?php $this->assign('title', 'Fale Conosco'); ?>
 <!-- Section: contact -->
 	<section id="contact" class="home-section text-center">
 	<div class="heading-contact marginbot-50">

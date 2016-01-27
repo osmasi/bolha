@@ -1,3 +1,4 @@
+<?php $this->assign('title', 'Alterar senha'); ?>
 <fieldset>
     <div class="col-md-12 col-xs-12">
         <div class="x_panel">

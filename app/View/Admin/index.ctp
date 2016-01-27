@@ -1,3 +1,5 @@
+<?php $this->assign('title', 'Painel de Administração'); ?>
+
 <fieldset>
     <div class="x_title">
         <h2>ADMIN</h2>
