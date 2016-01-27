@@ -3356,3 +3356,122 @@ Request URL: /bolha/img/produtos/19084118056165.jpg
 Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-01-27 02:42:50 Error: Fatal Error (4): syntax error, unexpected '===' (T_IS_IDENTICAL) in [/Applications/XAMPP/xamppfiles/htdocs/bolha/app/View/Loja/index.ctp, line 51]
+2016-01-27 02:42:50 Error: [FatalErrorException] syntax error, unexpected '===' (T_IS_IDENTICAL)
+Request URL: /bolha/loja
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 51, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 51, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-27 02:43:31 Error: Fatal Error (4): syntax error, unexpected '===' (T_IS_IDENTICAL) in [/Applications/XAMPP/xamppfiles/htdocs/bolha/app/View/Loja/index.ctp, line 208]
+2016-01-27 02:43:31 Error: [FatalErrorException] syntax error, unexpected '===' (T_IS_IDENTICAL)
+Request URL: /bolha/loja
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 208)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 208, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 208, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/bolha/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-27 02:46:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:46:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:47:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:47:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:47:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:47:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:49:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:49:05 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:49:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:49:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-27 02:49:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /bolha/img/produtos/19084118056165.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/bolha/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
