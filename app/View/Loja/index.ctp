@@ -49,9 +49,7 @@
                     <div class="modal-body">
                         <div class="pricing-table">
                             <div class="title large">
-                                <?php $banana = 'produtos/' . '{{img}}' ; echo $banana; ?>
-                            <?php //echo $this->Html->image($banana, array('width' => '200px', 'height' => '200px')); ?>
-                            <img src="<?php $banana ?>">
+                            <img src="/bolha/app/webroot/img/produtos/{{img}}" width="200px" height="200px">
                                 <h4 style="color:white">{{nome}}</h4>
                             </div>
                             <div class="list-group-item">
@@ -125,10 +123,10 @@
                                   //compara se o produto do banco existe na session
                                   if($item == 'produto'.$prod['id']){ ?>
                                     <?php $nomeItem = $itens['Produto']['nome']; ?>
-                                    <div class="col-sm-3 boxed-grey" align="left" ng-init="apagado = true" ng-show="apagado">
+                                    <div class="col-sm-3 alert alert-info" align="left" ng-init="apagado = true" ng-show="apagado">
 
                                       <?php echo $this->Html->image('produtos/'.$itens['Produto']['imagem'], array('width' => '100px', 'height' => '100px')); ?>
-                                        <?php echo $this->Form->label($nomeItem.' Quantidade '.$addQtd);
+                                        <?php echo $this->Form->label($nomeItem.' Quantidade: '.$addQtd);
                                               $totalPedido += $addQtd * $valorItem;
                                         ?>
                                         <button type="button" class="close" data-toggle="modal" data-target="#confirmaExclusao" ng-click="sessao ='<?php echo $item; ?>'">&times;</button>
@@ -139,7 +137,7 @@
                                 </div>
                             </div>
 
-                            <h5>Total a pagar R$ <?php echo $totalPedido; ?> </h5>
+                            <h5>Total a pagar: R$ <?php echo $totalPedido; ?> </h5>
 
                             <div class="row">
                                 <div class="col-sm-6"></div>
@@ -213,7 +211,8 @@
                         <div class="row" ng-show='exibePag'>
                             <?php
                                     if(!isset($this->Session->read()['Auth']['User'])){
-                                      echo "<pre><h5>Necessário estar logado para finalizar esta compra</h5></pre>";
+                                      echo "<pre><h5>Necessário estar logado para finalizar esta compra</h5>
+                                      <br><a href='/bolha/users/login'>Clique aqui para logar<a></pre>";
                                     }else{
                                       $usuarioLogado = $this->Session->read()['Auth']['User']['id'];
                                       echo $this->Form->create('Pedido', array('type' => 'file'));

@@ -102,4 +102,41 @@
 
   		}
 
+       public function index_pedido($id) {
+             $this->set('pedidos', $this->Pedido->find('all'));
+        }
+
+        public function edit_pedido($id = null) {
+            $this->Pedido->id = $id;
+
+            $this->set('id_usuario', $id);
+
+            if ($this->request->is('get')) {
+                $this->request->data = $this->Pedido->read();
+            } else {
+                if ($this->Pedido->save($this->request->data)) {
+                    $this->Session->setFlash('Pedido atualizado!', 'default',
+                        array('class' => "alert alert-success"));
+                    $this->redirect(array('action' => 'index_pedido'));
+                } else {
+                    $this->Session->setFlash('Não foi possível atualizar. Por favor, tente novamente.', 'default',
+                        array('class' => "alert alert-danger"));
+                }
+            }
+        }
+
+        public function delete_pedido($id) {
+
+        if (!$this->request->is('post')) {
+          throw new MethodNotAllowedException();
+        }
+
+        if ($this->Pedido->delete($id)) {
+
+          $this->Session->setFlash('O Pedido foi excluído com sucesso!', 'default', array('class' => 'alert alert-success'));
+          $this->redirect(array('action' => 'index_pedido'));
+
+        }
+
+      }
     }

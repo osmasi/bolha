@@ -30,16 +30,8 @@
             <div class="tile-stats">
                 <div class="icon"><i class="fa fa-check-square-o fa-5x"></i></div>
                 <h3><?php echo $this->Html->link("Pedidos",
-                            array('controller' => 'admin', 'action' => 'index_cliente')); ?></h3>
+                            array('controller' => 'admin', 'action' => 'index_pedido')); ?></h3>
                 <p>Pedidos à faturar.</p>
-            </div>
-        </div>
-        <div class="animated flipInY col-lg-2 col-md-2 col-sm-6 col-xs-12">
-            <div class="tile-stats">
-                <div class="icon"><i class="fa fa-money fa-5x"></i></div>
-                <h3><?php echo $this->Html->link("Financeiro",
-                            array('controller' => 'admin', 'action' => 'index_cliente')); ?></h3>
-                <p>Contas a pagar e receber.</p>
             </div>
         </div>
     </div>

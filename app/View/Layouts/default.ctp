@@ -72,11 +72,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         		<?php //echo "<pre>"; print_r($this->Session->read()); echo "</pre>";
 	        		if (isset($this->Session->read()['Auth']['User'])) {
 	        		    $usuario = $this->Session->read()['Auth']['User'];
-	        		    echo "<a href='/bolha/users/index_perfil'>Bem-vindo(a), " . $usuario['nome'] . "</a>";
+	        		    echo "<a href='/bolha/users/index_perfil'>Bem-vindo(a), " . $usuario['nome'] . "!</a>";
 	        		    echo "</li>";
+	        		    echo $usuario['role'] == 'admin' ? "<li><a href='/bolha/admin'>ADMIN</a></li>" : '';
 	        		    echo "<li><a href='/bolha/users/logout'>Sair</a></li>";
 	        		} else {
-	        			echo "<a href=''>Cadastrar</a>";
+	        			echo "<a href='/bolha/users/add'>Cadastrar</a>";
 	        			echo "</li>";
 	        			echo "<li><a href='/bolha/users/login'>Entrar</a></li>";
 	        		}

@@ -17,7 +17,10 @@
             if ($this->request->is('post')) {
 
                 if (!empty($this->data['AddCarrinho']['quantidade'])) {
-                  $qtd = $this->data['AddCarrinho']['quantidade'];
+                  if($_SESSION['produto'.$this->data['AddCarrinho']['id']]){
+                    $qtd = $_SESSION['produto'.$this->data['AddCarrinho']['id']]['qtd'];
+                  }
+                  $qtd += $this->data['AddCarrinho']['quantidade'];
                   $id = $this->data['AddCarrinho']['id'];
                   $produto = array('id' => $id, 'qtd' => $qtd);
                   $this->Session->write('produto'.$id,$produto);
@@ -29,7 +32,7 @@
                       $this->redirect(array('action'=>'boleto'));
                     }else{
                       $this->Session->setFlash('Pedido feito com sucesso!', 'default', array('class' => "alert alert-success"));
-                    }                                                     //a funcao upload salva o arquivo e retorna o nome
+                    }
 
                   }else{
                     $this->Session->setFlash('Não foi possível realizar este pedido. Por favor, tente novamente.', 'default', array('class' => "alert alert-danger"));
