@@ -78,7 +78,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	        		    echo ($usuario['role'] == 'admin') ? "<li><a href='/bolha/admin'>ADMIN</li>" : "";
 	        		    echo "<li><a href='/bolha/users/logout'>Sair</a></li>";
 	        		} else {
-	        			echo "<a href=''>Cadastrar</a>";
+	        			echo "<a href='/bolha/users/add'>Cadastrar</a>";
 	        			echo "</li>";
 	        			echo "<li><a href='/bolha/users/login'>Entrar</a></li>";
 	        		}
