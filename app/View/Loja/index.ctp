@@ -11,6 +11,8 @@ if(!isset($this->Session->read()['Auth']['User'])){
     <div id='testandobanana'></div>
 </div>
 
+
+
 <?php
 //  TENTANDO O AJAX
     $data = $this->Js->get('#AddCarrinhoForm')->serializeForm(array('isForm' => true, 'inline' => true));
@@ -34,8 +36,13 @@ if(!isset($this->Session->read()['Auth']['User'])){
 
 <div ng-app="myApp" ng-controller="myCtrl">
     <div class="x_title" >
-        <h2>LOJA</h2>
+      <h2>LOJA</h2>
+      <div class="container row pull-down" style="size: 300px; font-size:22px; margin-bottom:50px;">
+        <a href='/bolha/pages/help' class="gn-icon gn-icon-help">Não encontrou o que queria? Faça um orçamento clicando aqui!</a>
+      </div>
     </div>
+    
+
     <div ng-app="myApp" ng-controller="myCtrl">
 
         <div class="container col-sm-11">
@@ -43,11 +50,11 @@ if(!isset($this->Session->read()['Auth']['User'])){
             <div class="animated flipInY col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="tile-stats team boxed-grey">
                     <label ng-click="addProduto();
-                                id = <?php echo $item['Produto']['id'] ?>;
-                                            nome = '<?php echo $item['Produto']['nome']; ?>';
-                                                        valor = <?php echo $item['Produto']['valor']; ?>;
-                                                                    qtd = <?php echo $item['Produto']['quantidade']; ?>;
-                                                                                desc = '<?php echo $item['Produto']['descricao']; ?>'"
+                      id = <?php echo $item['Produto']['id'] ?>;
+                      nome = '<?php echo $item['Produto']['nome']; ?>';
+                      valor = <?php echo $item['Produto']['valor']; ?>;
+                      qtd = <?php echo $item['Produto']['quantidade']; ?>;
+                      desc = '<?php echo $item['Produto']['descricao']; ?>'"
                            data-toggle="modal" data-target="#detalhes">
                         <div class="inner" >
                             <h6><?php echo $item['Produto']['nome']; ?></h6>
@@ -255,3 +262,5 @@ if(!isset($this->Session->read()['Auth']['User'])){
         <!-- Modal Fim-->
 
     </div>
+</div>
+  

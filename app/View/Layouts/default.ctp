@@ -62,8 +62,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<ul class="gn-menu">
 							<li><a href="/bolha/loja" class="gn-icon gn-icon-archive">Loja</a></li>
 							<li><a href="/bolha/pages/service" class="gn-icon gn-icon-cog">Serviços</a></li>
-							<li><a href="/bolha/pages/about" class="gn-icon gn-icon-download">Sobre</a></li>
-							<li><a href="/bolha/pages/help" class="gn-icon gn-icon-help">Contato</a></li>
+							<li><a href="/bolha/pages/about" class="gn-icon gn-icon-download">Sobre a Comércio</a></li>
+							<li><a href="/bolha/pages/help" class="gn-icon gn-icon-help">Fale conosco</a></li>
 						</ul>
 					</div><!-- /gn-scroller -->
 				</nav>
@@ -73,8 +73,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         		<?php //echo "<pre>"; print_r($this->Session->read()); echo "</pre>";
 	        		if (isset($this->Session->read()['Auth']['User'])) {
 	        		    $usuario = $this->Session->read()['Auth']['User'];
-	        		    echo "<a href='/bolha/users/index_perfil'>Bem-vindo(a), " . $usuario['nome'] . "</a>";
+	        		    echo "<a href='/bolha/users/index_perfil'>Bem-vindo(a), " . $usuario['nome'] . "!</a>";
 	        		    echo "</li>";
+	        		    echo ($usuario['role'] == 'admin') ? "<li><a href='/bolha/admin'>ADMIN</li>" : "";
 	        		    echo "<li><a href='/bolha/users/logout'>Sair</a></li>";
 	        		} else {
 	        			echo "<a href=''>Cadastrar</a>";

@@ -41,7 +41,7 @@
         public function login() {
     		if ($this->request->is('post')) {
     			if ($this->Auth->login()) {
-    				return $this->redirect($this->Auth->redirectUrl());
+    				$this->redirect('/users/index_perfil');
     			}
                 $this->Session->setFlash('Não foi possível acessar o sistema. Usuário ou senha inválido!!!', 'default',
                     array('class' => "alert alert-danger"));
@@ -49,7 +49,9 @@
         }
 
     	public function logout() {
-    		return $this->redirect($this->Auth->logout());
+            $this->Auth->logout();
+            $this->Session->setFlash('Volte sempre!', 'default', array('class' => "alert alert-success"));
+            $this->redirect('/');
     	}
 
     	public function index() {

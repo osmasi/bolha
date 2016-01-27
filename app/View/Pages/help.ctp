@@ -19,7 +19,7 @@ App::uses('Debugger', 'Utility');
 			<div class="col-lg-8 col-lg-offset-2">
 
 				<div class="section-heading">
-				<h2>Ficou alguma dúvida?</h2>
+				<h2>Ficou alguma dúvida? <br>Deseja fazer um orçamento?</h2>
 				<h2>Entre em contato</h2>
 				<p>Estamos a sua disposição!</p>
 				</div>
@@ -30,7 +30,7 @@ App::uses('Debugger', 'Utility');
 	</div>
 	<div class="container">
 		<div class="row">
-    		<div class="col-lg-8 col-md-offset-2">
+    		<div class="col-lg-10 col-md-offset-1">
 
 				<div class="widget-contact row">
 					 <div class="col-lg-6">
@@ -55,11 +55,11 @@ App::uses('Debugger', 'Utility');
 				<div class="boxed-grey">
             		<form id="contact-form">
             			<div class="row">
-                			<div class="col-md-6">
+                			<div class="col-md-3">
                     			<div class="form-group">
                         			<label for="name">
                             			Nome</label>
-                        			<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        			<input type="text" class="form-control" id="name" placeholder="Seu nome" required="required" />
                     			</div>
 			                    <div class="form-group">
 			                        <label for="email">
@@ -67,29 +67,30 @@ App::uses('Debugger', 'Utility');
 			                        <div class="input-group">
 			                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
 			                            </span>
-			                            <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+			                            <input type="email" class="form-control" id="email" placeholder="Seu email" required="required" /></div>
 			                    </div>
 			                    <div class="form-group">
 			                        <label for="subject">
 			                            Subject</label>
 			                        <select id="subject" name="subject" class="form-control" required="required">
 			                            <option value="na" selected="">Escolha um:</option>
-			                            <option value="service">Plástico Bolha</option>
-			                            <option value="suggestions">Papelão</option>
-			                            <option value="product">Outros</option>
+			                            <option value="orcamento">Orçamento</option>
+			                            <option value="bolha">Plástico Bolha</option>
+			                            <option value="papelao">Papelão</option>
+			                            <option value="outros">Outros</option>
 			                        </select>
 			                    </div>
                 			</div>
-			                <div class="col-md-6">
+			                <div class="col-md-9">
 			                    <div class="form-group">
 			                        <label for="name">
 			                            Mensagem</label>
-			                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-			                            placeholder="Message"></textarea>
+			                        <textarea name="message" id="message" class="ckeditor form-control" rows="9" cols="30" required="required"
+			                            placeholder="Mensagem"></textarea>
 			                    </div>
 			                </div>
-			                <div class="col-md-12">
-			                    <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+			                <div class="col-md-3">
+			                    <button type="submit" class="btn btn-skin pull-left" id="btnContactUs">
 			                        Enviar Mensagem</button>
 			                </div>
             			</div>
