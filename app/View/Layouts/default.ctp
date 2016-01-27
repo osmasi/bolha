@@ -70,7 +70,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</li>
 			<li><a href="/bolha">COMÉRCIO LTDA</a></li>
         	<li>
-        		<?php //echo "<pre>"; print_r($this->Session->read()); echo "</pre>"; 
+        		<?php //echo "<pre>"; print_r($this->Session->read()); echo "</pre>";
 	        		if (isset($this->Session->read()['Auth']['User'])) {
 	        		    $usuario = $this->Session->read()['Auth']['User'];
 	        		    echo "<a href='/bolha/users/index_perfil'>Bem-vindo(a), " . $usuario['nome'] . "</a>";
@@ -160,11 +160,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                },
 
 			});
-		
+
 			 $('footer').mouseover(function(){
 				 $('footer').fadeOut('slow');
 			 });
-
 		});
 	</script>
 
