@@ -20,10 +20,10 @@
             <div class="tile-stats">
                 <div class="icon"><i class="fa fa-money fa-5x"></i></div>
                 <h3><?php echo $this->Html->link("Minhas Compras",
-                            array('controller' => 'users', 'action' => 'perfil')); ?></h3>
+                            array('controller' => 'users', 'action' => 'index_pedidos',$user_full[0]['User']['id'])); ?></h3>
                 <p>Mostra todas as compras efetuadas por você.</p>
             </div>
-        </div>
+          </div>
     </div>
 
 

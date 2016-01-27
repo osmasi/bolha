@@ -3,7 +3,7 @@
     class UsersController extends AppController {
 
         public $name = 'Users';
-        public $uses = array('User','Endereco');
+        public $uses = array('User','Endereco','Pedido','Pedido_produto');
 
         public function isAuthorized($user = null) {
             if (parent::isAuthorized($user))
@@ -15,6 +15,14 @@
                             case 'perfil':
                             case 'pass':
                             case 'help':
+                            case 'index_perfil':
+                            case 'edit_perfil':
+                            case 'index_perfil_endereco':
+                            case 'edit_perfil_endereco':
+                            case 'add_perfil_endereco':
+                            case 'delete_endereco':
+                            case 'index_pedidos':
+                            case 'view_produtos':
                                 return true;
                                 break;
                             default:
@@ -78,6 +86,24 @@
             }
         }
 
+        function edit_perfil($id = null){
+            $this->User->id = $id;
+
+            if ($this->request->is('get')) {
+                $this->request->data = $this->User->read();
+            } else {
+                if ($this->User->save($this->request->data)) {
+                    $this->Session->setFlash('Usuário atualizado!', 'default',
+                        array('class' => "alert alert-success"));
+                    $this->redirect(array('action' => 'perfil'));
+                } else {
+                    $this->Session->setFlash('Não foi possível atualizar. Por favor, tente novamente.', 'default',
+                        array('class' => "alert alert-danger"));
+                }
+            }
+        }
+
+
         public function perfil(){
             $user_login = $this->Auth->user('id');
             $user_full = $this->User->find('all', array(
@@ -117,6 +143,18 @@
             }
         }
 
+        function delete_endereco($id){
+            if (!$this->request->is('post')) {
+                    throw new MethodNotAllowedException();
+            }
+            if ($this->Endereco->delete($id)) {
+                $this->Session->setFlash('Endereço id: ' . $id . ' foi removido.', 'default',
+                    array('class' => "alert alert-warning"));
+                $this->redirect(array('action' => 'index_perfil_endereco'));
+            }
+        }
+
+
 
 
 
@@ -137,7 +175,27 @@
             }
         }
 
+        public function add_perfil_endereco(){
+            	$this->set('id_user', $this->Auth->user('id'));
+          	if ($this->request->is('post')) {
+                if ($this->Endereco->save($this->request->data)) {
+                    $this->Session->setFlash('Endereço cadastrado com sucesso!', 'default',
+                        array('class' => "alert alert-success"));
+                    $this->redirect(array('action' => 'index_perfil_endereco'));
+                }else{
+                    $this->Session->setFlash('Não foi possível realizar o cadastro. Por favor, tente novamente.', 'default',
+                        array('class' => "alert alert-danger"));
+                }
+            }
+        }
+
+
         public function index_endereco($id) {
+             $this->set('enderecos', $this->Endereco->find('all', array(
+                        'conditions' => "id_usuario = $id")));
+        }
+
+        public function index_perfil_endereco($id) {
              $this->set('enderecos', $this->Endereco->find('all', array(
                         'conditions' => "id_usuario = $id")));
         }
@@ -161,8 +219,40 @@
             }
         }
 
-        public function index_perfil(){
+        function edit_perfil_endereco($id = null){
+            $this->Endereco->id = $id;
 
+            $this->set('id_usuario', $id);
+
+            if ($this->request->is('get')) {
+                $this->request->data = $this->Endereco->read();
+            } else {
+                if ($this->Endereco->save($this->request->data)) {
+                    $this->Session->setFlash('Endereço atualizado!', 'default',
+                        array('class' => "alert alert-success"));
+                    $this->redirect(array('action' => 'index_perfil_endereco'));
+                } else {
+                    $this->Session->setFlash('Não foi possível atualizar. Por favor, tente novamente.', 'default',
+                        array('class' => "alert alert-danger"));
+                }
+            }
         }
 
+        public function index_perfil(){
+          $user_login = $this->Auth->user('id');
+          $user_full = $this->User->find('all', array(
+                              'conditions' => "id = $user_login"));
+          $this->set('user_full', $user_full);
+        }
+
+        public function index_pedidos($id) {
+             $this->set('pedidos', $this->Pedido->find('all', array(
+                        'conditions' => "usuario = $id")));
+        }
+
+        public function view_produtos($id = null) {
+          $this->Pedido_produto->id = $id;
+             $this->set('pedido_produtos', $this->Pedido_produto->find('all', array(
+                        'conditions' => "id_pedido = $id")));
+        }
     }

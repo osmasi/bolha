@@ -154,7 +154,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `bolha`.`pedidos_produtos` ;
 
-CREATE TABLE IF NOT EXISTS `bolha`.`pedidos_produtos` (
+CREATE TABLE IF NOT EXISTS `bolha`.`pedido_produtos` (
   `quantidade` INT NOT NULL,
   `id_produto` INT NOT NULL,
   `id_pedido` INT NOT NULL,
@@ -219,7 +219,7 @@ INSERT INTO `pedidos` (`id`, `usuario`, `valorTotal`, `formaPagamento`, `status`
   (NULL, '4', '2000', '1', 'aguardando pagamento'),
   (NULL, '3', '10000', '2', 'pagamento confirmado');
 
-INSERT INTO `pedidos_produtos` (`id_pedido`, `id_produto`, `quantidade`) VALUES
+INSERT INTO `pedido_produtos` (`id_pedido`, `id_produto`, `quantidade`) VALUES
   ('1', '1', '200'),
   ('1', '2', '300'),
   ('2', '1', '200'),

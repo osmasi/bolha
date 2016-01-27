@@ -20,7 +20,7 @@
                 <div class="form-group">
                     <div class="form-group col-md-2">
                       <?php echo $this->Html->link('Visualizar Endereço',
-                          array('action' => 'index_endereco', $user_full[0]['User']['id']),
+                          array('action' => 'index_perfil_endereco', $user_full[0]['User']['id']),
                           array('class' => "btn btn-dark btn-block" )
                           ); ?>
                     </div>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-group col-md-2">
                       <?php echo $this->Html->link('Alterar Cadastro',
-                          array('action' => 'edit', $user_full[0]['User']['id']),
+                          array('action' => 'edit_perfil', $user_full[0]['User']['id']),
                           array('class' => "btn btn-dark btn-block" )
                           ); ?>
                     </div>
