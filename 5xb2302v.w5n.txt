@@ -1,0 +1,29 @@
+﻿Merge remote-tracking branch 'origin/master'
+
+# Conflicts:
+#	app/tmp/cache/models/myapp_cake_model_default_bolha_list
+#	app/tmp/cache/models/myapp_cake_model_default_bolha_produtos
+#	app/tmp/cache/models/myapp_cake_model_default_bolha_usuarios
+#	app/tmp/cache/persistent/myapp_cake_core_cake_dev_pt-br
+#	app/tmp/cache/persistent/myapp_cake_core_cake_pt-br
+#	app/tmp/cache/persistent/myapp_cake_core_default_pt-br
+#	app/tmp/cache/persistent/myapp_cake_core_file_map
+#	app/tmp/cache/persistent/myapp_cake_core_method_cache
+#	app/tmp/logs/error.log
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 1 different commit each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+
