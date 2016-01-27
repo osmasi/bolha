@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 if(!isset($this->Session->read()['Auth']['User'])){
   echo "<script>window.location('http://localhost/bolha/users/login')</script>";
@@ -9,6 +10,12 @@ if(!isset($this->Session->read()['Auth']['User'])){
     <h1>testando a banana:</h1>
     <div id='testandobanana'></div>
 </div>
+=======
+                         <div>
+                                    <h1>testando a banana:</h1>
+                                    <div id='testandobanana'></div>
+                                </div>
+>>>>>>> origin/master
 <?php
 //  TENTANDO O AJAX
     $data = $this->Js->get('#AddCarrinhoForm')->serializeForm(array('isForm' => true, 'inline' => true));
@@ -19,14 +26,14 @@ if(!isset($this->Session->read()['Auth']['User'])){
     array(
         'update' => '#testandobanana',
         'data' => $data,
-        'async' => true,
+        'async' => true,    
         'dataExpression'=>true,
         'method' => 'POST',
         'before' => "$('#modalContainer').load('carrinho.php')",
     )
   )
 );
- echo $this->Js->writeBuffer();
+ echo $this->Js->writeBuffer(); 
 ?>
 
 
@@ -36,10 +43,17 @@ if(!isset($this->Session->read()['Auth']['User'])){
     </div>
     <div ng-app="myApp" ng-controller="myCtrl">
 
+<<<<<<< HEAD
         <!--
         <div class="container">
                   <div class="row">
               <?php $i = 0;
+=======
+<!--
+<div class="container">
+          <div class="row">
+              <?php $i = 0; 
+>>>>>>> origin/master
               foreach ($produtosHome as $item) { ?>
                       <div class="col-xs-6 col-sm-3 col-md-3">
                           <div class="team boxed-grey">
@@ -50,6 +64,11 @@ if(!isset($this->Session->read()['Auth']['User'])){
                               </div>
                           </div>
                       </div>
+<<<<<<< HEAD
+=======
+                  </div>
+              </div>      
+>>>>>>> origin/master
               <?php $i++; if ($i >= 4) break; } ?>
                   </div>
             </div>
@@ -69,8 +88,13 @@ if(!isset($this->Session->read()['Auth']['User'])){
                         <div class="inner" >
                             <h6><?php echo $item['Produto']['nome']; ?></h6>
                     <?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '100px', 'height' => '100px')); ?>
+<<<<<<< HEAD
                         </div>
                     </label>
+=======
+                  </div>
+            </label> 
+>>>>>>> origin/master
                 </div>
             </div>
             <?php } ?>
@@ -81,6 +105,7 @@ if(!isset($this->Session->read()['Auth']['User'])){
         </div>
 
 
+<<<<<<< HEAD
         <!-- Modal -->
         <div class="modal fade" id="detalhes" role="dialog">
             <div class="modal-dialog">
@@ -107,15 +132,48 @@ if(!isset($this->Session->read()['Auth']['User'])){
                         <div class="row">
 
                             <div class="form-group  col-md-4">
+=======
+            <!-- Modal -->
+            <div class="modal fade" id="detalhes" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal Conteudo-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h6 class="modal-title">Confira os detalhes deste produto</h6>
+                        </div>
+                        <!-- Modal Corpo-->
+                        <div class="modal-body">
+                            <ul class="pricing-table">
+                                <li class="title large">
+                            <?php echo $this->Html->image('produtos/'.$item['Produto']['imagem'], array('width' => '200px', 'height' => '200px')); ?>
+                                    <h4 style="color:white">{{nome}}</h4>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="hidden" value="{{id}}" id='id_carrinho' />
+                                    <h6>Preço {{valor|currency:"R$"}}</h6>
+                                    <p font-size="8px">Total disponível em estoque <b>{{qtd - quantidade}}</b> unidades</p>
+                                </li>
+                            </ul>
+                            <div class="row">
+
+                              <div class="form-group  col-md-4">
+>>>>>>> origin/master
                                 <?php echo $this->Form->create('AddCarrinho');//, array('id' => 'AddCarrinhoForm', /*'default' => false,*/ 'url' => array('controller' => 'loja', 'action' => 'addCarrinho'))*/);
                                     echo "Adicionar ao Carrinho: ";
                                     echo $this->Form->input('quantidade', array('for' => "qtd", 'class' => "col-sm-6", 'type' => "number", 'max' => "{{qtd}}", 'value' => "0"));
                                     echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{id}}"));
                                     echo $this->Form->input('nome', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "{{nome}}"));
                                      ?>
+<<<<<<< HEAD
                             </div>
 
                             <div class="form-group col-md-8">
+=======
+                              </div>
+
+                              <div class="form-group col-md-8">
+>>>>>>> origin/master
                                   <?php echo $this->Form->submit('Adicionar', array('class' => "col-sm-4 button success large left"));
                                         echo $this->Form->end(); ?>
                             </div>
@@ -135,7 +193,7 @@ if(!isset($this->Session->read()['Auth']['User'])){
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog">
                 <!-- Modal Conteudo-->
                 <div class="modal-content">
                     <div class="modal-header">
@@ -145,6 +203,7 @@ if(!isset($this->Session->read()['Auth']['User'])){
                     <!-- Modal Corpo-->
                     <div class="modal-body">
                         <div class="content">
+<<<<<<< HEAD
                             <div class="panel panel-default" id="prodAdicionado">
                                 <div class="panel-header"><h3 style="background-color:black; color:white" align="center">  Produtos      <i class="fi-shopping-cart"></i></h3></div>
                                 <div class="panel-body row">
@@ -153,6 +212,11 @@ if(!isset($this->Session->read()['Auth']['User'])){
                                 $arrPedidoProduto = array();
                                 $arrayCarrinho = array();
                                 foreach ($todos_produtos as $itens) {
+=======
+                            <ul class="pricing-table" id="prodAdicionado">
+                                <li class="title large"><h3 style="color:white">  Produtos      <i class="fi-shopping-cart"></i></h3></li>
+                                <?php foreach ($todos_produtos as $itens) {
+>>>>>>> origin/master
                                   $item = "produto".$itens['Produto']['id']; //cria o nome produto + o id com base no banco de dados
                                   $prod = $this->Session->read('produto'.$itens['Produto']['id']); //cria o nome produto + o id com base na session
                                   $addId = $prod['id']; //id para adicionar ao banco
@@ -162,6 +226,7 @@ if(!isset($this->Session->read()['Auth']['User'])){
 
                                   //compara se o produto do banco existe na session
                                   if($item == 'produto'.$prod['id']){ ?>
+<<<<<<< HEAD
                                     <?php $nomeItem = $itens['Produto']['nome']; ?>
                                     <div class="col-sm-3 boxed-grey" align="left">
                                         <? echo $this->Form->input('quantidade', array('label' => "$nomeItem", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd")); ?>
@@ -180,6 +245,22 @@ if(!isset($this->Session->read()['Auth']['User'])){
                             </div>
 
                             <h5>Total: {{total| currency:"R$"}}</h5>
+=======
+                                    <li class="description">
+                                      <div class="form-group">
+                                        <?php echo "<h4>".$itens['Produto']['nome']."</h4><h6>"; ?>
+                                        <?php echo $this->Form->create('salvarPedido');
+                                            echo $this->Form->input('quantidade', array('label' => "Quantidade", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd"));
+                                            echo $this->Form->input('id', array('label' => 'id', 'class' => "form-control", 'type' => "hidden", 'value' => "$addId"));
+                                             ?>
+                                        </h6></div>
+                                    </li>
+                                  <?php } }?>
+
+                            </ul>
+
+                            <h5>Total: {{total | currency:"R$"}}</h5>
+>>>>>>> origin/master
                             <div class="row">
                                 <div class="col-sm-6"></div>
                                 <button type="button" class="button success large right extend col-sm-6" data-toggle="modal" data-target="#pagamento" data-dismiss="modal">Finalizar</button>
@@ -269,4 +350,8 @@ if(!isset($this->Session->read()['Auth']['User'])){
     </div>
 
 
+<<<<<<< HEAD
 </div>
+=======
+      </div>
+>>>>>>> origin/master
