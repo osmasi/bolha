@@ -217,7 +217,7 @@
                                     }else{
                                       $usuarioLogado = $this->Session->read()['Auth']['User']['id'];
                                       echo $this->Form->create('Pedido', array('type' => 'file'));
-                                      echo $this->Form->input('cliente', array('class' => "form-control", 'type' => "hidden", 'value' => "$usuarioLogado"));
+                                      echo $this->Form->input('usuario', array('class' => "form-control", 'type' => "hidden", 'value' => "$usuarioLogado"));
                                       echo $this->Form->input('valorTotal', array('class' => "form-control", 'type' => "hidden", 'value' => "$totalPedido"));
                                       echo $this->Form->input('formaPagamento', array('class' => "form-control", 'type' => "hidden", 'value' => "{{forma_pagamento}}"));
                                       echo $this->Form->input('status', array('class' => "form-control", 'type' => "hidden", 'value' => "finalizado"));
@@ -252,7 +252,7 @@
                     <div class="modal-footer">
                       <?php
                            echo $this->Form->create('deletaSessao');
-                           echo "<button type='button' class='button success large cil-sm-6' data-dismiss='modal'>Cancelar</button>";
+                           echo "<button type='button' class='button success large col-sm-6' data-dismiss='modal'>Cancelar</button>";
                            echo $this->Form->input('deleta', array('class' => "form-control", 'type'=>"hidden", 'value'=> "$prodDelete"));
                            echo $this->Form->end(array('label'=>'Excluir', 'class'=>"button alert large col-sm-6"));
                         ?>

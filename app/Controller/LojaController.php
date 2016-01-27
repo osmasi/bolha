@@ -23,17 +23,16 @@
                   $this->Session->write('produto'.$id,$produto);
                 }
                 if (!empty($this->data['Pedido']['status'])) {
-                  $dados = $this->request->data;
-                  $dados['usuario'] = $this->Auth->user('id');
-                  if ($this->Pedido->save($dados)) {
+
+                  if ($this->Pedido->save($this->request->data)) {
                     if($this->data['Pedido']['formaPagamento'] == 1){
                       $this->redirect(array('action'=>'boleto'));
                     }else{
-                      $this->Session->setFlash('Pedido finalizado com sucesso!', 'default', array('class' => "alert alert-success"));
+                      $this->Session->setFlash('Pedido feito com sucesso!', 'default', array('class' => "alert alert-success"));
                     }                                                     //a funcao upload salva o arquivo e retorna o nome
 
                   }else{
-                    $this->Session->setFlash('Não foi possível finalizar este Pedido. Por favor, tente novamente.', 'default', array('class' => "alert alert-danger"));
+                    $this->Session->setFlash('Não foi possível realizar este pedido. Por favor, tente novamente.', 'default', array('class' => "alert alert-danger"));
                   }
                 }
                 if (!empty($this->data['deletaSessao'])) {
