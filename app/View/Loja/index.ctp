@@ -1,11 +1,4 @@
 
-<?php
-if(!isset($this->Session->read()['Auth']['User'])){
-  echo "<script>window.location('http://localhost/bolha/users/login')</script>";
-}else{
-  $usuarioLogado = $this->Session->read()['Auth']['User']['id'];
-}
-?>
 <div>
     <h1>testando a banana:</h1>
     <div id='testandobanana'></div>
@@ -150,8 +143,9 @@ if(!isset($this->Session->read()['Auth']['User'])){
                                   //compara se o produto do banco existe na session
                                   if($item == 'produto'.$prod['id']){ ?>
                                     <?php $nomeItem = $itens['Produto']['nome']; ?>
-                                    <div class="col-sm-3 boxed-grey" align="left">
-                                        <? echo $this->Form->input('quantidade', array('label' => "$nomeItem", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd")); ?>
+                                    <div class="col-sm-3 boxed-grey" align="left" ng-init="apagado = true" ng-show="apagado">
+                                        <? echo $this->Form->label('quantidade', array('label' => "$nomeItem", 'type' => "number",'class' => "form-control", 'min' => "0", 'max' => "$qtdTotal", 'value' => "$addQtd")); ?>
+                                        <label></label>
                                         <?php
                                             array_push($arrayCarrinho, array('id' => $addId, 'valor' => $valorItem, 'quantidade' => $addQtd));
                                             foreach ($arrayCarrinho as $prod) {
@@ -159,14 +153,16 @@ if(!isset($this->Session->read()['Auth']['User'])){
                                               $totalPedido += $prod['quantidade'] * $prod['valor'];
                                             }
                                         ?>
-                                        <!--<button type="button" class="close" ng-click="sessao = <? echo 'produto'.$prod['id']; ?>" data-toggle="modal" data-target="#confirmaExclusao">&times;</button>-->
+                                        <button type="button" class="close" data-toggle="modal" data-target="#confirmaExclusao" ng-model="'<?php echo $item; ?>'">&times;</button>
+
                                     </div>
                                     <div class="col-sm-1"></div>
                                   <?php } }?>
+                                  {{sessao}}
                                 </div>
                             </div>
 
-                            <h5>Total: {{total| currency:"R$"}}</h5>
+                            <h5>Total a pagar R$ <?php echo $totalPedido; ?> </h5>
 
                             <div class="row">
                                 <div class="col-sm-6"></div>
@@ -202,11 +198,11 @@ if(!isset($this->Session->read()['Auth']['User'])){
                                 <div class="col-sm-6" align="center" data-toggle="collapse" data-target="#card" ng-click="forma_pagamento = 2"><img src="/bolha/app/webroot/img/cartao.png" alt="boleto" height="80px" width="90px" class="col-sm-6"></div>
                             </fieldset>
                         </div>
-                              <?php  echo "Valor Total: R$ ".$totalPedido;  ?>
+
                         <div class="row">
                             <div>
                                 <hr>
-                                Escolha uma das formas de pagamento listadas acima
+                                <h5><?php  echo "Valor Total: R$ ".$totalPedido;  ?></h5>Escolha uma das formas de pagamento listadas acima
                                 <hr>
                             </div>
                         </div>
@@ -236,17 +232,47 @@ if(!isset($this->Session->read()['Auth']['User'])){
                         <br>
                         <div class="row">
                             <?php
-                                    echo $this->Form->create('salvarPedido');
-                                    echo $this->Form->input('cliente', array('class' => "form-control", 'type' => "hidden", 'value' => "$usuarioLogado"));
-                                    echo $this->Form->input('valorTotal', array('class' => "form-control", 'type' => "hidden", 'value' => "$totalPedido"));
-                                    echo $this->Form->input('formaPagamento', array('class' => "form-control", 'type' => "hidden", 'value' => "{{forma_pagamento}}"));
-                                    echo $this->Form->input('status', array('class' => "form-control", 'type' => "hidden", 'value' => "finalizado"));
-                                    echo $this->Form->end(array('label' => 'Finalizar', 'class' => "button success large right extend col-sm-12"));
+                                    if(!isset($this->Session->read()['Auth']['User'])){
+                                      echo "<pre><h5>Necessário estar logado para finalizar esta compra</h5></pre>";
+                                    }else{
+                                      $usuarioLogado = $this->Session->read()['Auth']['User']['id'];
+                                      echo $this->Form->create('salvarPedido');
+                                      echo $this->Form->input('cliente', array('class' => "form-control", 'type' => "hidden", 'value' => "$usuarioLogado"));
+                                      echo $this->Form->input('valorTotal', array('class' => "form-control", 'type' => "hidden", 'value' => "$totalPedido"));
+                                      echo $this->Form->input('formaPagamento', array('class' => "form-control", 'type' => "hidden", 'value' => "{{forma_pagamento}}"));
+                                      echo $this->Form->input('status', array('class' => "form-control", 'type' => "hidden", 'value' => "finalizado"));
+                                      echo $this->Form->end(array('label' => 'Finalizar', 'class' => "button success large right extend col-sm-12"));
+                                    }
+
                                 ?>
                         </div>
                     </div>
                     <!-- Modal Rodapé-->
                     <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Fim-->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="confirmaExclusao" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal Conteudo-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h6 class="modal-title">Exclusão</h6>
+                    </div>
+                    <div class="modal-body">
+                      Você confirma a exclusão deste item?<?php $prodDelete = '{{sessao}}'; ?>
+                      <p><b>{{excluido}}</b></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" ng-click="excluido ='Produto Excluido!'" onclick="<?php unset($_SESSION[$prodDelete]); ?>">Excluir</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                     </div>
                 </div>
